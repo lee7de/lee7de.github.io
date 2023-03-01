@@ -1,0 +1,345 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>时间所及，目光之外</title><meta name="author" content="leede"><meta name="copyright" content="leede"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="修炼理工解构的能力">
+<meta property="og:type" content="website">
+<meta property="og:title" content="时间所及，目光之外">
+<meta property="og:url" content="http://lider7214.cn/page/3/index.html">
+<meta property="og:site_name" content="时间所及，目光之外">
+<meta property="og:description" content="修炼理工解构的能力">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://lider7214.cn/img/avtar.jpg">
+<meta property="article:author" content="leede">
+<meta property="article:tag" content="计算机科学与技术 软件工程 博客笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://lider7214.cn/img/avtar.jpg"><link rel="shortcut icon" href="/img/avtar.jpg"><link rel="canonical" href="http://lider7214.cn/page/3/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '时间所及，目光之外',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-03-01 14:07:09'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avtar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">43</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">42</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">46</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/index.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="时间所及，目光之外"><span class="site-name">时间所及，目光之外</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">时间所及，目光之外</h1><div id="site_social_icons"><a class="social-icon" href="https://www.zhihu.com/people/li-da-ren-34-32" target="_blank" title="知乎"><i class="fa-brands fa-zhihu"></i></a><a class="social-icon" href="https://space.bilibili.com/320148219" target="_blank" title=""><i class="fa-brands fa-bilibili"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/02/05/%EF%BC%882.1.8%EF%BC%89%E8%8B%B1%E6%96%87-%E4%BA%8C%E5%8D%81%E5%9B%9B%E8%8A%82%E6%B0%94/" title="二十四节气的英文表达">二十四节气的英文表达</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-05T15:00:58.000Z" title="发表于 2022-02-05 23:00:58">2022-02-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/%E9%80%9A%E7%94%A8/">通用</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/%E9%80%9A%E7%94%A8/%E8%8B%B1%E8%AF%AD/">英语</a></span></div><div class="content">假期观看冬奥开幕式使用了24节气作为开场的倒计时，效果很是惊艳，其中对各个节气的英文表达引起了我的注意，由此总结了其英文表达及相关古诗词的英文描述。
+
+
+使用24节气作为倒计时在中国农历中，一年有24个节气，立春居首。
+
+A chinese lunar year has 24 solar terms, The Beginning of Spring comes first.
+
+北京奥运会开幕，恰逢立春。
+
+The Olympic Winter Games Beijing 2022 open on the day of the Beginning of Spring.
+
+让我们一起倒计时，迎接春的到来。
+
+Let’s greet the arrival of spring with a count down.
+
+24 雨水
+Rain Water随风潜入夜，润物细无声。
+
+《春夜喜雨》唐 杜甫好雨知时节，当春乃发生。随风潜入夜，润物细无声。野径云俱黑，江船火独明。晓看红湿处，花重锦官城。
+
+Welcome Rain One Spring Night戴乃迭、杨宪益译A good rain k ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/02/02/B3-2-1%E3%80%90%E6%80%BB%E7%BB%93%E3%80%912021%E5%B9%B4%E6%9C%AB%E6%80%BB%E7%BB%93/" title="2021年末总结">2021年末总结</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-02T14:09:17.000Z" title="发表于 2022-02-02 22:09:17">2022-02-02</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/B3-2%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86/">B3-2自我管理</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/B3-2%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86/3-2-1%E8%B5%84%E4%BA%A7%E4%B8%8E%E8%A7%84%E5%88%92/">3-2-1资产与规划</a></span></div><div class="content">2021年末总结
+2022年寒假在家，想起来一年发生了很多，便计划着写一点东西。
+
+
+去年的年末总结也是在家里写的，外面天很冷，那时候正是做项目的时候，是一个关于语音合成的工程。我在网上到处学习，想着做出点东西。
+一月到四月，所有的热情都投给了这个语音合成，学到了很多东西。也开始变得干净利落，开始在生活、学习上对过去日子积攒的种种做减法。
+做项目是为了比赛，大概是五月出的结果，成绩不好，没进入国赛，有些怅然，但是现在想起来自己一整个过程都是莽撞的行为和没有条理的推进，很多东西现在看有不少更好的发挥甚至现在还要努力去做的。但是对于当时的我来说尽力了。
+生活很是艰难，我也是一如既往的怀着悲观的心情，好像每个阶段我总能找出不如意来。五月之后，没了项目，在一段空白期里我开始学习理论，学了数学、计算机、电子信息和政治，一直持续到年末。
+在学习的过程中，十月是记忆最深刻的时候，我一度在摆烂，不知道现在的努力有什么效果，做点什么感觉又什么徒劳，像是被网在一张网里，费力撕却怎么也撕不开，全是憋闷。
+到了现在，浑浑噩噩地，一直在课外看着CS、EE的许多知识，解开了过去的很多疑惑，以前囫囵吞枣的行为仿佛也 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/02/02/B3-3%E6%89%93%E6%AF%94%E8%B5%9B%E7%9A%84%E7%BB%8F%E9%AA%8C/" title="做项目、打比赛的经验">做项目、打比赛的经验</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-02T10:50:51.000Z" title="发表于 2022-02-02 18:50:51">2022-02-02</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/%E6%9D%82%E8%B0%88/">杂谈</a></span></div><div class="content">不断修炼理工解构的能力。
+
+
+一个探索项目前：
+猜测，自己构建
+项目中：
+主动对比、印证、思考
+项目后：
+思考总结、归档
+Stage 1培养兴趣
+玩游戏般体验
+看相关资料、文档
+休息
+思考
+看样例代码
+融入环境（官方、民间讨论团体、本地环境配置）
+Stage 2维持兴趣
+玩游戏
+看文档
+休息
+思考
+理解样例代码
+小改样例代码
+Stage 3理解游戏
+理解文档
+休息
+思考
+讨论学习
+形成自己的想法
+大改样例代码&#x2F;自己的代码框架
+4 进阶优化调试
+评测
+完善细节
+尝试更多可能性
+5 预案5.1 对游戏的理解将游戏元素分解
+将规则熟记于心
+修炼自己对游戏的形势判断能力
+能根据自己理解划分并处理各种游戏状态&#x2F;情况
+5.2 时间和耐心这是一场持久战
+核心算法（思想）可能发生大变动
+细节需要不断打磨
+休息与状态调整也需要时间
+一个成熟的想法往往只会在若干个不成熟的想法之后
+一个令自己满意的成果从起步到完成，中间可能需要很多时间
+5.3 技巧，及对资源的利用回放、复盘
+在线网络优势
+本地优势、测试
+调试信息
+版本控制
+5.4 更好的策略估值&#x2F;形势判断
+if-else、基 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/06/24/%EF%BC%881.2.5%EF%BC%89%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" title="电路基础笔记">电路基础笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-06-23T23:47:44.000Z" title="发表于 2021-06-24 07:47:44">2021-06-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%90%86%E8%AE%BA/">理论</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E7%90%86%E8%AE%BA/CST%E5%9F%BA%E7%A1%80/">CST基础</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E7%90%86%E8%AE%BA/CST%E5%9F%BA%E7%A1%80/%E7%94%B5%E8%B7%AF%E7%90%86%E8%AE%BA/">电路理论</a></span></div><div class="content">TODO：电路基础整理
+
+
+实测良心的电子信息类网课推荐
+电路-MIT
+math basics for circuitscalculusDistance, Velocity, Acceleration
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/06/21/%EF%BC%881.2.6%EF%BC%89%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/" title="信号与系统简易记录">信号与系统简易记录</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-06-21T01:54:52.000Z" title="发表于 2021-06-21 09:54:52">2021-06-21</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%90%86%E8%AE%BA/">理论</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E7%90%86%E8%AE%BA/CST%E5%9F%BA%E7%A1%80/">CST基础</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E7%90%86%E8%AE%BA/CST%E5%9F%BA%E7%A1%80/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/">信号与系统</a></span></div><div class="content">TODO：信号与系统摘要
+TODO：基础整理
+
+
+
+
+[原创连载]深入浅出通信原理
+如何学好信号与系统
+通俗地理解卷积
+信息论-B站
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/06/16/A1-1%E5%BE%AE%E7%A7%AF%E5%88%86%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" title="微积分基础笔记">微积分基础笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-06-16T08:49:00.000Z" title="发表于 2021-06-16 16:49:00">2021-06-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%90%86%E8%AE%BA/">理论</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E7%90%86%E8%AE%BA/%E6%95%B0%E7%90%86%E5%9F%BA%E7%A1%80/">数理基础</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E7%90%86%E8%AE%BA/%E6%95%B0%E7%90%86%E5%9F%BA%E7%A1%80/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a></span></div><div class="content">微积分是理工解构思维的基础，其提供了许多强大的工具来分析现实世界的许多问题。
+TODO：基础整理
+
+
+
+在正式开始微积分的总结之前，不妨来梳理微积分的整个流程。首先，
+
+第一章 函数、极限、连续
+$\epsilon$ 语言——“再多一点就越过界限，任意性就被破坏”
+
+函数的定义——三要素
+
+定义域
+值域
+对应法则
+
+函数的性质常见函数类型极限的定义极限的性质极限存在性的定理极限的分析性质极限的运算性质极限存在性的准则极限的计算两个重要极限渐近线
+垂直渐进线
+水平渐近线
+斜渐近线
+
+无穷小无穷小与无穷大的定义无穷小与无穷大的关系无穷小与极限的关系无穷小与无穷大的性质无穷小的比较等价无穷小的替换常用的等价无穷小连续函数的连续函数的间断
+间断点的定义
+间断点的分类与判别
+
+连续函数的性质
+四则运算性质
+复合函数的性质
+反函数的性质
+
+闭区间上连续函数的性质
+有界定理
+最值定理
+介值定理
+零点定理
+
+拓展阅读用“定义+基本逻辑推理”证明函数无界
+戴德金定理——现代数学实数理论的基础之一，可以推出实数理论中的六大基本定理
+确界存在定理
+实数理论的七个基本定理
+双曲函数的文章
+双曲函数的来历
+数学 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/06/15/%EF%BC%881.1.4%EF%BC%89%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E9%9A%8F%E8%AE%B0/" title="线性代数基础学习笔记">线性代数基础学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-06-15T11:20:25.000Z" title="发表于 2021-06-15 19:20:25">2021-06-15</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%90%86%E8%AE%BA/">理论</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E7%90%86%E8%AE%BA/%E6%95%B0%E7%90%86%E5%9F%BA%E7%A1%80/">数理基础</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E7%90%86%E8%AE%BA/%E6%95%B0%E7%90%86%E5%9F%BA%E7%A1%80/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">线性代数</a></span></div><div class="content">TODO：线代基础整理
+线代 3b1b
+
+
+行列式 The determinant行列式的相关概念行列式的展开定理行列式的性质几种特殊的行列式矩阵 Matrix矩阵的概念与运算矩阵的秩初等变换与初等矩阵分块矩阵线性方程组线性方程组的几种表示形式线性方程组有解的判别条件齐次线性方程组的解非齐次线性方程组的解向量 vectors线性代数是一门语言，需要从语言的角度理解其中的变换，我们所学习的有几何直观层面的解释和计算方法的应用，几何更重要、计算次之，二者结合起来应用到各个领域解决实际问题。
+n维向量的概念与运算向量的表示
+物理专业： 箭头数学专业：vector计算机专业：矩阵，ordered list of numbers
+
+向量在坐标系vector coordinates
+向量加法和数乘 vector addition and multiplication by numbersi and j are the basis vectors of two scaled vectors坐标是对（i,j）的拉伸
+向量组的线性相关与线性无关向量组的极大无关组与向量组的秩向量的内积与斯密特正交化向量空 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/06/14/%EF%BC%882.1.1%EF%BC%89%E8%8B%B1%E8%AF%AD-%E6%96%87%E5%8C%96%E4%B9%A0%E4%BF%97/" title="外语学习中的文化习俗">外语学习中的文化习俗</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-06-14T15:03:50.000Z" title="发表于 2021-06-14 23:03:50">2021-06-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/%E9%80%9A%E7%94%A8/">通用</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/%E9%80%9A%E7%94%A8/%E8%8B%B1%E8%AF%AD/">英语</a></span></div><div class="content">在外语学习中，关于文化习俗的了解也是必不可少的一步，以下内容积累了一些外语文化中的相关话题。
+
+
+委婉语
+nature stop
+pluck a rose
+Daisy“I’ll be pushing up daisies before this problem is solved.”
+為什麼解決問題前，要把雛菊推高呢？
+
+Daisy是「雛菊」，常長於墳墓附近，這是指一個人死了，埋在泥土下，花會在上面生長出來，這就是pushing up daisies，意思是那個人去世，被埋葬，入土為安了。
+
+
+因为文化的差异，中文和英语中描述同一事情喻体的选取往往不同.
+
+be (as) plain as the nose on your face
+He’s not happy here - that’s as plain as the nose on your face.他在這裡並不愉快——這是顯而易見的。
+
+taikonauts
+由汉语而来的英语词汇实际上，作为仅有的三个独立载人航天国家,美国、俄罗斯和中国航天员的称呼各不相同
+
+美国或其他国家的航天员名称,一般是“astronauts”;
+俄罗斯 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/06/14/%EF%BC%882.1.3%EF%BC%89vscode%E7%AC%94%E8%AE%B0/" title="vscode入门笔记">vscode入门笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-06-14T09:14:32.000Z" title="发表于 2021-06-14 17:14:32">2021-06-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD/">基本技能</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD/vscode/">vscode</a></span></div><div class="content">vscode
+
+偏好设置方法从系统主题中设置：先按Ctrl+D，然后按Ctrl+T
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/06/14/%EF%BC%882.1.4%EF%BC%89AxMath%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E7%BC%96%E8%BE%91%E7%AC%94%E8%AE%B0/" title="数学公式编辑入门笔记">数学公式编辑入门笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-06-14T09:14:32.000Z" title="发表于 2021-06-14 17:14:32">2021-06-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD/">基本技能</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD/AxMath-Latex/">AxMath-Latex</a></span></div><div class="content">AxMath
+
+数学公式编辑
+</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/2/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/#content-inner">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/#content-inner">4</a><a class="page-number" href="/page/5/#content-inner">5</a><a class="extend next" rel="next" href="/page/4/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avtar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">leede</div><div class="author-info__description">修炼理工解构的能力</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">43</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">42</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">46</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/lee7de"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://www.zhihu.com/people/li-da-ren-34-32" target="_blank" title="知乎"><i class="fa-brands fa-zhihu"></i></a><a class="social-icon" href="https://space.bilibili.com/320148219" target="_blank" title=""><i class="fa-brands fa-bilibili"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">时间所及，目光之外。</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/01/%EF%BC%883.2.1%EF%BC%89%E6%8B%89%E4%BC%B8%E7%AC%94%E8%AE%B0/" title="拉伸笔记">拉伸笔记</a><time datetime="2023-03-01T05:26:49.954Z" title="发表于 2023-03-01 13:26:49">2023-03-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/01/%EF%BC%881.2.4%EF%BC%89%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" title="计算机网络基础笔记">计算机网络基础笔记</a><time datetime="2023-03-01T05:26:49.798Z" title="发表于 2023-03-01 13:26:49">2023-03-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/01/%EF%BC%881.2.3%EF%BC%89%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" title="操作系统基础笔记">操作系统基础笔记</a><time datetime="2023-03-01T05:26:49.791Z" title="发表于 2023-03-01 13:26:49">2023-03-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/01/%EF%BC%881.2.2%EF%BC%89%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" title="计算机组成原理基础笔记">计算机组成原理基础笔记</a><time datetime="2023-03-01T05:26:49.784Z" title="发表于 2023-03-01 13:26:49">2023-03-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/01/%EF%BC%881.1.3%EF%BC%89%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%E7%AC%94%E8%AE%B0/" title="概率论与数理统计笔记">概率论与数理统计笔记</a><time datetime="2023-03-01T05:26:49.756Z" title="发表于 2023-03-01 13:26:49">2023-03-01</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/B2-2-1C%E5%8F%8ACpp%E9%A1%B9%E7%9B%AE/"><span class="card-category-list-name">B2-2-1C及Cpp项目</span><span class="card-category-list-count">1</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/B2-2-1C%E5%8F%8ACpp%E9%A1%B9%E7%9B%AE/2-2-1C%E8%AF%AD%E8%A8%80%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">2-2-1C语言编程笔记</span><span class="card-category-list-count">1</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/B2-2-2Python%E9%A1%B9%E7%9B%AE/"><span class="card-category-list-name">B2-2-2Python项目</span><span class="card-category-list-count">1</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/B2-2-2Python%E9%A1%B9%E7%9B%AE/2-2-1Python%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">2-2-1Python编程笔记</span><span class="card-category-list-count">1</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/B3-2%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86/"><span class="card-category-list-name">B3-2自我管理</span><span class="card-category-list-count">8</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/B3-2%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86/3-2-1%E8%B5%84%E4%BA%A7%E4%B8%8E%E8%A7%84%E5%88%92/"><span class="card-category-list-name">3-2-1资产与规划</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/B3-2%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86/3-2-3%E9%98%85%E8%AF%BB%E4%B8%8E%E5%88%9B%E4%BD%9C/"><span class="card-category-list-name">3-2-3阅读与创作</span><span class="card-category-list-count">1</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF/"><span class="card-category-list-name">技术</span><span class="card-category-list-count">14</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/" style="font-size: 1.1em; color: #999">二分查找</a> <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" style="font-size: 1.1em; color: #999">线性代数</a> <a href="/tags/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/" style="font-size: 1.1em; color: #999">信号与系统</a> <a href="/tags/MATLAB%E5%BA%94%E7%94%A8/" style="font-size: 1.1em; color: #999">MATLAB应用</a> <a href="/tags/%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80/" style="font-size: 1.1em; color: #999">电路基础</a> <a href="/tags/vscode/" style="font-size: 1.1em; color: #999">vscode</a> <a href="/tags/git/" style="font-size: 1.1em; color: #999">git</a> <a href="/tags/Paper-Reading/" style="font-size: 1.1em; color: #999">Paper Reading</a> <a href="/tags/Vim/" style="font-size: 1.1em; color: #999">Vim</a> <a href="/tags/%E5%81%A5%E8%BA%AB/" style="font-size: 1.1em; color: #999">健身</a> <a href="/tags/%E8%AE%A1%E7%BB%84/" style="font-size: 1.1em; color: #999">计组</a> <a href="/tags/word/" style="font-size: 1.1em; color: #999">word</a> <a href="/tags/AxMath/" style="font-size: 1.1em; color: #999">AxMath</a> <a href="/tags/PS/" style="font-size: 1.1em; color: #999">PS</a> <a href="/tags/Web/" style="font-size: 1.1em; color: #999">Web</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 1.1em; color: #999">计算机网络</a> <a href="/tags/markdown/" style="font-size: 1.1em; color: #999">markdown</a> <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" style="font-size: 1.1em; color: #999">高等数学</a> <a href="/tags/%E8%8B%B1%E8%AF%AD%E6%96%87%E5%8C%96%E4%B9%A0%E4%BF%97/" style="font-size: 1.1em; color: #999">英语文化习俗</a> <a href="/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" style="font-size: 1.1em; color: #999">神经网络</a> <a href="/tags/%E5%90%91%E9%87%8F/" style="font-size: 1.1em; color: #999">向量</a> <a href="/tags/%E6%91%84%E5%BD%B1/" style="font-size: 1.3em; color: #99a1ac">摄影</a> <a href="/tags/%E7%9F%A9%E9%98%B5/" style="font-size: 1.1em; color: #999">矩阵</a> <a href="/tags/office/" style="font-size: 1.1em; color: #999">office</a> <a href="/tags/%E8%AF%BB%E4%B9%A6/" style="font-size: 1.1em; color: #999">读书</a> <a href="/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/" style="font-size: 1.1em; color: #999">图像处理</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 1.1em; color: #999">数据结构</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" style="font-size: 1.1em; color: #999">博客搭建</a> <a href="/tags/%E6%80%BB%E7%BB%93/" style="font-size: 1.5em; color: #99a9bf">总结</a> <a href="/tags/C-Cpp/" style="font-size: 1.1em; color: #999">C/Cpp</a> <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 1.1em; color: #999">操作系统</a> <a href="/tags/matlab/" style="font-size: 1.1em; color: #999">matlab</a> <a href="/tags/%E7%AB%9E%E8%B5%9B%E7%BB%8F%E9%AA%8C/" style="font-size: 1.1em; color: #999">竞赛经验</a> <a href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86%E7%AC%94%E8%AE%B0/" style="font-size: 1.1em; color: #999">微积分笔记</a> <a href="/tags/Python/" style="font-size: 1.1em; color: #999">Python</a> <a href="/tags/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/" style="font-size: 1.1em; color: #999">概率论与数理统计</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AF%BC%E8%AE%BA/" style="font-size: 1.1em; color: #999">计算机导论</a> <a href="/tags/%E5%A4%8D%E5%8F%98/" style="font-size: 1.1em; color: #999">复变</a> <a href="/tags/Transformer/" style="font-size: 1.1em; color: #999">Transformer</a> <a href="/tags/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/" style="font-size: 1.1em; color: #999">反向传播</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">三月 2023</span><span class="card-archive-list-count">9</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">一月 2023</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">十一月 2022</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/07/"><span class="card-archive-list-date">七月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/06/"><span class="card-archive-list-date">六月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/04/"><span class="card-archive-list-date">四月 2022</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/02/"><span class="card-archive-list-date">二月 2022</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/06/"><span class="card-archive-list-date">六月 2021</span><span class="card-archive-list-count">16</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">43</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-03-01T06:07:08.799Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By leede</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Welcome to lee de's blog</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
