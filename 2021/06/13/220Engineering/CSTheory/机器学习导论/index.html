@@ -1,0 +1,225 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>机器学习入门笔记 | 时间所及，目光之外</title><meta name="author" content="leede"><meta name="copyright" content="leede"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="一些人工智能概念">
+<meta property="og:type" content="article">
+<meta property="og:title" content="机器学习入门笔记">
+<meta property="og:url" content="http://lider7214.cn/2021/06/13/220Engineering/CSTheory/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AF%BC%E8%AE%BA/index.html">
+<meta property="og:site_name" content="时间所及，目光之外">
+<meta property="og:description" content="一些人工智能概念">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://lider7214.cn/img/avtar.jpg">
+<meta property="article:published_time" content="2021-06-13T07:02:45.000Z">
+<meta property="article:modified_time" content="2023-12-26T04:49:41.306Z">
+<meta property="article:author" content="leede">
+<meta property="article:tag" content="Transformer">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://lider7214.cn/img/avtar.jpg"><link rel="shortcut icon" href="/img/avtar.jpg"><link rel="canonical" href="http://lider7214.cn/2021/06/13/220Engineering/CSTheory/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AF%BC%E8%AE%BA/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '机器学习入门笔记',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-12-26 12:49:41'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avtar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">67</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">36</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">47</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 文章列表</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 发布时间线</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 全站关键词</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 内容分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/index.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="时间所及，目光之外"><span class="site-name">时间所及，目光之外</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 文章列表</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 发布时间线</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 全站关键词</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 内容分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">机器学习入门笔记</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-06-13T07:02:45.000Z" title="发表于 2021-06-13 15:02:45">2021-06-13</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-26T04:49:41.306Z" title="更新于 2023-12-26 12:49:41">2023-12-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%90%86%E8%AE%BA/">理论</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%90%86%E8%AE%BA/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%90%86%E8%AE%BA/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/AI-Systems/">AI Systems</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="机器学习入门笔记"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>一些人工智能概念</p>
+<span id="more"></span>
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzIyMjIxNDk3OA==&mid=2651685306&idx=1&sn=0469cdf45caeb6637a439198da826181&chksm=f3c9cf97c4be4681c394ad05f437763d6694475e01fecbd39188157ade95e4c5d9b9d6efa1ce&mpshare=1&scene=23&srcid=06137uBVJnVhWYulYJrtSkWi&sharer_sharetime=1623520111870&sharer_shareid=f08d979887d18cfb4bde290e5cca460c#rd">万字长文带你入门Transformer </a></p>
+<blockquote>
+<p>Transformer在许多的人工智能领域，如自然语言处理(Natural Language Processing, NLP)、计算机视觉(Computer Vision, CV)和语音处理(Speech Processing, SP)取得了巨大的成功。因此，自然而然的也吸引了许多工业界和学术界的研究人员的兴趣。到目前为止，已经提出了大量基于Transformer的相关工作和综述。本文基于邱锡鹏[1]老师团队近日所发表的一篇综述[2]为基础，详细的解读Transformer的来龙去脉，同时为大家介绍近期一些相关工作，中间也会穿插一些笔者的见解。最后，本文也将列出一些可探索的未来研究方向，希望能给予读者一些启发。</p>
+</blockquote>
+<h1 id="一个参考的知识系统-见refer-1"><a href="#一个参考的知识系统-见refer-1" class="headerlink" title="一个参考的知识系统(见refer[1])"></a>一个参考的知识系统(见refer[1])</h1><h2 id="1-网络框架"><a href="#1-网络框架" class="headerlink" title="1 网络框架"></a>1 网络框架</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">浅层神经网络</span><br><span class="line">深度学习网络</span><br><span class="line">常见的模型框架</span><br><span class="line"><span class="code">    Transformer</span></span><br><span class="line"><span class="code">一些优秀的框架思想</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2-网络调优"><a href="#2-网络调优" class="headerlink" title="2 网络调优"></a>2 网络调优</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">超参、正则、优化</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-机器学习"><a href="#3-机器学习" class="headerlink" title="3 机器学习"></a>3 机器学习</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">大数据处理</span><br><span class="line">数据挖掘：爬虫、网络攻击</span><br><span class="line">常规非网络内容</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-计算机视觉"><a href="#4-计算机视觉" class="headerlink" title="4 计算机视觉"></a>4 计算机视觉</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">图像处理传统</span><br><span class="line">卷积神经网络</span><br></pre></td></tr></table></figure>
+<h3 id="三维重建讲座"><a href="#三维重建讲座" class="headerlink" title="三维重建讲座"></a>三维重建讲座</h3><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247611627&idx=2&sn=757ab1cff3613593e70d0f3a5a6aa330&chksm=90953d78a7e2b46ec262540232972e37a94498f7ea2d436de1816333f3f7b85a5c6b6e5a8697&mpshare=1&scene=23&srcid=0618ddvBrFXnMk5vuYtyiTOB&sharer_sharetime=1624001268406&sharer_shareid=f08d979887d18cfb4bde290e5cca460c#rd">朱松纯：三维视觉是通用AI的关键，要以任务为导向 </a></p>
+<blockquote>
+<p>朱教授强调了大量的几何常识在三维重建中的重要作用，指出三维视觉的路径应该是由三维重建到任务导向的三维场景理解，并展示了面向任务的场景表达和类人推理在三维场景中的功能性、物理性和实用性之间的关系，为三维视觉如何推动通用人工智能的发展指明了方向。</p>
+</blockquote>
+<p>5 自然语言与语音</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">自然语言处理</span><br><span class="line">语音识别</span><br><span class="line">语音合成</span><br></pre></td></tr></table></figure>
+<p>6 博弈</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">GAN网络</span><br><span class="line">博弈论</span><br></pre></td></tr></table></figure>
+
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><p><a target="_blank" rel="noopener" href="https://www.coursera.org/learn/neural-networks-deep-learning">Andrew Ng 神经网络与深度学习</a></p>
+<p>[1]<a target="_blank" rel="noopener" href="https://xpqiu.github.io/">https://xpqiu.github.io/</a></p>
+<p>[2]<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2106.04554">https://arxiv.org/abs/2106.04554</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://lider7214.cn">leede</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://lider7214.cn/2021/06/13/220Engineering/CSTheory/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AF%BC%E8%AE%BA/">http://lider7214.cn/2021/06/13/220Engineering/CSTheory/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AF%BC%E8%AE%BA/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://lider7214.cn" target="_blank">时间所及，目光之外</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Transformer/">Transformer</a></div><div class="post_share"><div class="social-share" data-image="/img/avtar.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/06/13/320Mind/Editor/markdown%E7%AC%94%E8%AE%B0/" title="markdown笔记"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">markdown笔记</div></div></a></div><div class="next-post pull-right"><a href="/2021/06/13/220Engineering/CSTheory/CV%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/" title="图像处理/计算机视觉入门笔记"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">图像处理/计算机视觉入门笔记</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avtar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">leede</div><div class="author-info__description">修炼理工解构的能力</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">67</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">36</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">47</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/lee7de"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://www.zhihu.com/people/li-da-ren-34-32" target="_blank" title="知乎"><i class="fa-brands fa-zhihu"></i></a><a class="social-icon" href="https://space.bilibili.com/320148219" target="_blank" title="B站"><i class="fa-brands fa-bilibili"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">时间所及，目光之外。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E4%B8%AA%E5%8F%82%E8%80%83%E7%9A%84%E7%9F%A5%E8%AF%86%E7%B3%BB%E7%BB%9F-%E8%A7%81refer-1"><span class="toc-number">1.</span> <span class="toc-text">一个参考的知识系统(见refer[1])</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%BD%91%E7%BB%9C%E6%A1%86%E6%9E%B6"><span class="toc-number">1.1.</span> <span class="toc-text">1 网络框架</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E7%BD%91%E7%BB%9C%E8%B0%83%E4%BC%98"><span class="toc-number">1.2.</span> <span class="toc-text">2 网络调优</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0"><span class="toc-number">1.3.</span> <span class="toc-text">3 机器学习</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89"><span class="toc-number">1.4.</span> <span class="toc-text">4 计算机视觉</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E7%BB%B4%E9%87%8D%E5%BB%BA%E8%AE%B2%E5%BA%A7"><span class="toc-number">1.4.1.</span> <span class="toc-text">三维重建讲座</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Reference"><span class="toc-number">2.</span> <span class="toc-text">Reference</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/12/26/200Nature/%E6%99%AE%E9%80%9A%E7%89%A9%E7%90%86%E5%9F%BA%E7%A1%80/" title="普通物理基础">普通物理基础</a><time datetime="2023-12-26T03:54:20.000Z" title="发表于 2023-12-26 11:54:20">2023-12-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/12/220Engineering/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/" title="人工智能与数理统计">人工智能与数理统计</a><time datetime="2023-06-12T03:17:39.000Z" title="发表于 2023-06-12 11:17:39">2023-06-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/08/100System/%E6%B1%BD%E8%BD%A6%E8%A1%8C%E4%B8%9A%E8%B0%83%E7%A0%94%E7%AC%94%E8%AE%B0/" title="汽车行业调研笔记">汽车行业调研笔记</a><time datetime="2023-06-08T13:44:23.000Z" title="发表于 2023-06-08 21:44:23">2023-06-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/08/220Engineering/CSTheory/%E4%BB%8E%E6%B7%B1%E5%BA%A6%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%88%B0%E4%BA%BA%E7%B1%BB%E8%BE%85%E5%8A%A9%E5%B7%A5%E7%A8%8B/" title="从深度神经网络到人类辅助工程">从深度神经网络到人类辅助工程</a><time datetime="2023-06-08T13:42:28.000Z" title="发表于 2023-06-08 21:42:28">2023-06-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/08/220Engineering/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%90%86%E8%AE%BA%E5%9C%A8%E5%93%AA%E4%B8%AA%E9%98%B6%E6%AE%B5/" title="人工智能理论在哪个阶段">人工智能理论在哪个阶段</a><time datetime="2023-06-08T13:41:41.000Z" title="发表于 2023-06-08 21:41:41">2023-06-08</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By leede</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Welcome to lee de's blog</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"><script>function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '2fffb60e5e9334270e37',
+      clientSecret: '5794ce706b4215118f15ace35c7ef206d27a4565',
+      repo: 'lee7de.github.io',
+      owner: 'lee7de',
+      admin: ['lee7de'],
+      id: 'c63d755f03f6bcd59cb0b42636d28b73',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    getCSS('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css')
+    getScript('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !false) {
+  if (false) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

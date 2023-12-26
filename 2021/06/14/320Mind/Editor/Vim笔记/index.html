@@ -1,0 +1,388 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>Vim入门笔记 | 时间所及，目光之外</title><meta name="author" content="leede"><meta name="copyright" content="leede"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Vim入门笔记关于Vim学习 此处应有Vim概述 #TODO  Vim的使用层次   存活 感觉良好 觉得更好，更强，更快 使用VIM的超能力     Quick Start i → Insert 模式，按 ESC 回到 Normal 模式. x → 删当前光标所在的一个字符。 :wq → 存盘 + 退出 (:w 存盘, :q 退出)  （陈皓注：:w 后可以跟文件名） dd → 删除当前行，并把">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vim入门笔记">
+<meta property="og:url" content="http://lider7214.cn/2021/06/14/320Mind/Editor/Vim%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="时间所及，目光之外">
+<meta property="og:description" content="Vim入门笔记关于Vim学习 此处应有Vim概述 #TODO  Vim的使用层次   存活 感觉良好 觉得更好，更强，更快 使用VIM的超能力     Quick Start i → Insert 模式，按 ESC 回到 Normal 模式. x → 删当前光标所在的一个字符。 :wq → 存盘 + 退出 (:w 存盘, :q 退出)  （陈皓注：:w 后可以跟文件名） dd → 删除当前行，并把">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://lider7214.cn/img/avtar.jpg">
+<meta property="article:published_time" content="2021-06-14T09:14:32.000Z">
+<meta property="article:modified_time" content="2023-12-26T12:34:03.638Z">
+<meta property="article:author" content="leede">
+<meta property="article:tag" content="Vim">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://lider7214.cn/img/avtar.jpg"><link rel="shortcut icon" href="/img/avtar.jpg"><link rel="canonical" href="http://lider7214.cn/2021/06/14/320Mind/Editor/Vim%E7%AC%94%E8%AE%B0/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Vim入门笔记',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-12-26 20:34:03'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avtar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">67</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">36</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">47</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 文章列表</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 发布时间线</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 全站关键词</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 内容分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/index.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="时间所及，目光之外"><span class="site-name">时间所及，目光之外</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 文章列表</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 发布时间线</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 全站关键词</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 内容分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Vim入门笔记</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-06-14T09:14:32.000Z" title="发表于 2021-06-14 17:14:32">2021-06-14</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-26T12:34:03.638Z" title="更新于 2023-12-26 20:34:03">2023-12-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Mind/">Mind</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Mind/Tools/">Tools</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Mind/Tools/Vim/">Vim</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Vim入门笔记"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Vim入门笔记"><a href="#Vim入门笔记" class="headerlink" title="Vim入门笔记"></a>Vim入门笔记</h1><h2 id="关于Vim学习"><a href="#关于Vim学习" class="headerlink" title="关于Vim学习"></a>关于Vim学习</h2><ol>
+<li><p>此处应有Vim概述 #TODO</p>
+</li>
+<li><p>Vim的使用层次</p>
+<blockquote>
+<ol>
+<li>存活</li>
+<li>感觉良好</li>
+<li>觉得更好，更强，更快</li>
+<li>使用VIM的超能力</li>
+</ol>
+</blockquote>
+</li>
+</ol>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><ul>
+<li><code>i</code> → <em>Insert</em> 模式，按 <code>ESC</code> 回到 <em>Normal</em> 模式.</li>
+<li><code>x</code> → 删当前光标所在的一个字符。</li>
+<li><code>:wq</code> → 存盘 + 退出 (<code>:w</code> 存盘, <code>:q</code> 退出)  （陈皓注：:w 后可以跟文件名）</li>
+<li><code>dd</code> → 删除当前行，并把删除的行存到剪贴板里</li>
+<li><code>p</code> → 粘贴剪贴板</li>
+</ul>
+<h1 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h1><p>在 Vim 中有 4 种编辑模式，分别是：普通模式、插入模式、可视模式和命令行模式。使用 Vim 进行编辑就需要熟练的在各个模式之间进行切换。</p>
+<p><img src="https://ahonn-me.oss-cn-beijing.aliyuncs.com/images/wAUpUM.png" alt="vim四种编辑模式"></p>
+<h2 id="普通模式"><a href="#普通模式" class="headerlink" title="普通模式"></a>普通模式</h2><ul>
+<li><p>进入编辑器的时候默认为普通模式，用 <code>h/j/k/l</code> 来对光标进行移动</p>
+<ul>
+<li>左右两边的 <code>h/l</code> 代表左右移动，而食指在键盘的默认位置 <code>j</code>即为向下，反之 <code>k</code> 为向上</li>
+<li>普通模式下输入是一个命令，可以指定次数，例如向下移动 10 行——连续按 10 次 j或直接输入 10j</li>
+</ul>
+</li>
+<li><p>更高效的光标移动命令：</p>
+<ul>
+<li><code>^/$</code>：跳到行首&#x2F;行尾（正则表达式的内容）</li>
+<li><code>w/b</code>：跳到下一个单词头&#x2F;跳到上一个单词头</li>
+<li>快捷键： <code>ctrl + a</code> 或者 <code>ctrl + e</code> 来跳到行首或者行尾（windows某些编辑器可能不生效）</li>
+<li><img src="https://ahonn-me.oss-cn-beijing.aliyuncs.com/images/gyKgUn.png" alt="vim-快速移动光标"></li>
+</ul>
+</li>
+<li><p><code>f&#123;char&#125;/F&#123;char&#125;</code>：跳到下一个字符为 char 的位置&#x2F;跳到上一个字符为 char 的位置——实现向前&#x2F;向后搜索某个字符，然后跳过去</p>
+<ul>
+<li><img src="https://ahonn-me.oss-cn-beijing.aliyuncs.com/images/Pddwc3.png" alt="跳到指定字符"></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>  以上的各种跳转方式可以满足绝大多数跳转的场景，熟练使用之后基本上就不要再通过鼠标去移动光标了</p>
+<p>  “画家在休息时不会把画笔放在画布上。对 Vim 而言也是这样，普通模式就是 Vim 的自然放松状态，其名字已经寓示了这一点。” ——《Vim实用技巧》</p>
+<p>  “谁说一定要切换到插入模式才行？我们可以重新调整已有代码的格式，复制它们，移动其位置，或是删除它们。在普通模式中，我们有众多的工具可以利用。”——《Vim实用技巧》</p>
+</blockquote>
+<h2 id="插入模式"><a href="#插入模式" class="headerlink" title="插入模式"></a>插入模式</h2><ul>
+<li><p>在插入模式进行插入字符、换行等操作</p>
+</li>
+<li><p>从普通模式进入插入模式：</p>
+<ul>
+<li><code>i</code>：在光标的前面进行插入</li>
+<li><code>a</code>：在光标的后面进行插入</li>
+<li><code>o</code>：在光标所在行后面插入新一行</li>
+<li><img src="https://ahonn-me.oss-cn-beijing.aliyuncs.com/images/diLxcP.png" alt="进入插入模式"></li>
+</ul>
+</li>
+<li><p>更多插入命令（变种的 <code>I/A/O</code> ）：</p>
+<ul>
+<li><code>I</code> 在行首进行插入，约等于<code>^a</code></li>
+<li><code>A</code> 在行尾进行输入，约等于 <code>$a</code></li>
+<li><code>O</code> 在光标所在行的前面插入新一行，约等于<code>ko</code></li>
+</ul>
+</li>
+<li><p>插入模式切换到普通模式:</p>
+<ul>
+<li><code>Esc</code> 或者 <code>ctrl + [</code></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>  一般的流程是普通模式中移动光标或者执行命令，然后在需要插入代码的位置切换到插入模式进行编辑，编辑完成之后再切换回普通模式。就像是画家思考完成之后拿起画布画，然后再放下画笔继续思考，以此往复。</p>
+<p>  一旦形成肌肉记忆之后就可以不需要回忆那个命令是自己想要的操作了，这一点上跟从全拼输入法切换到双拼输入法的时候的感觉类似。</p>
+</blockquote>
+<h2 id="可视模式"><a href="#可视模式" class="headerlink" title="可视模式"></a>可视模式</h2><ul>
+<li><p>插入模式，最大的职责就是进行字符的插入，其余交给命令</p>
+</li>
+<li><p><code>x</code> 删除对应的字符</p>
+</li>
+<li><p><code>d</code> 删除指定范围的内容</p>
+<ul>
+<li><code>dd</code>：删除当前光标所在的行</li>
+<li><code>diw</code>：删除当前光标所在的单词</li>
+<li><code>dt&#123;char&#125;</code>：从当前位置删除到某个字符前为止</li>
+</ul>
+</li>
+<li><p>可视模式基于普通模式</p>
+</li>
+<li><p>在普通模式下使用 <code>v</code> 进入可视模式</p>
+<ul>
+<li>使用的 <code>v</code> 命令是进入以字符为单位的可视模式<ul>
+<li><code>V</code> ：进入以行为单位的可视模式 </li>
+<li><code>ctrl + v</code>：进入以列为单位的可视模式命令</li>
+</ul>
+</li>
+<li>在普通模式中按 <code>v</code> 的时候，会把当前光标为主作为选区的起点，然后可以通过 <code>h/j/k/l/w/b</code> 等进行光标的移动，确定选区的终点</li>
+<li><img src="https://ahonn-me.oss-cn-beijing.aliyuncs.com/images/lNuHSh.png" alt="可视模式下进行选择"></li>
+</ul>
+</li>
+<li><p><code>d</code> ：剪切</p>
+<ul>
+<li>选择了要操作的范围之后，可用 <code>d</code> 命令来进行删除（实际上进行的是「剪切」操作）</li>
+<li>继续使用命令 <code>p</code> 在普通模式下进行粘贴</li>
+</ul>
+</li>
+<li><p><code>y</code>：复制</p>
+<ul>
+<li><code>yy</code> 复制一行内容</li>
+<li>进入可视模式之后选定指定的内容进行复制，然后回到普通模式进行 <code>p</code> 粘贴操作</li>
+</ul>
+</li>
+<li><p><code>p</code> ：粘贴 </p>
+</li>
+<li><p><strong>文本对象 text object</strong></p>
+<ul>
+<li><p>在不移动光标的情况下来操作一定区域内的内容</p>
+</li>
+<li><p><code>diw</code>就使用到了文本对象</p>
+<ul>
+<li>拆解为<code>d</code> + <code>iw</code></li>
+<li><code>iw</code> 即为文本对象，指的是当前单词</li>
+</ul>
+</li>
+<li><p><code>aw</code>：当前单词以及空格</p>
+</li>
+<li><p><code>i(</code>：括号内的内容</p>
+</li>
+<li><p><code>a(</code>：括号以及括号内的内容</p>
+</li>
+<li><p><code>i(</code> 和 <code>a（</code> 中的括号可以换成任何成对的符号，例如 <code>i[</code>、<code>i&#123;</code>、<code>i&quot;</code> 等，表示删除成对的符号范围的内容</p>
+</li>
+<li><p><code>d</code> 命令后面可以跟着文本对象，同理也可以使用 <code>y</code> 命令加文本对象复制指定区域内容</p>
+</li>
+<li><p><img src="https://ahonn-me.oss-cn-beijing.aliyuncs.com/images/593bq4.png" alt="复制文本对象"></p>
+</li>
+<li><p>类似，快速的复制任何成对符号中的内容（这在复制代码中的字符串时非常的有用）</p>
+</li>
+<li><p>通过文本对象可以无需进入可视模式而进行一些简单的操作</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="命令行模式"><a href="#命令行模式" class="headerlink" title="命令行模式"></a>命令行模式</h2><ul>
+<li><p>在普通模式中输入 <code>:</code> 会进入命令模式</p>
+</li>
+<li><p><code>:qa</code> ：退出 Vim 编辑器</p>
+</li>
+<li><p><code>:q!</code>：强制退出</p>
+</li>
+<li><p><code>:w</code>、<code>:wa</code>：保持当前文件&#x2F;保存所有文件</p>
+</li>
+<li><p><code>:s/old/new/g</code>：将字符串 <code>old</code> 替换为 <code>new</code></p>
+</li>
+</ul>
+<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><p>命令模式下<a target="_blank" rel="noopener" href="http://vimdoc.sourceforge.net/htmldoc/vimindex.html#ex-cmd-index">支持非常多的命令</a>，但一般来说不需要进入命令模式就可以完成我们的编辑操作了，并且把需要经常使用的命令模式下的命令映射到<strong>某一个快捷键当中</strong>来进行使用。</p>
+<p>例如，可以把上面的字符串的命令映射到某一个快捷键上</p>
+<ul>
+<li>在 <code>~/.vimrc</code> 文件中添加如下内容：<code>nnoremap &lt;C-f&gt; :s/</code></li>
+<li>在命令模式中重新载入vim 配置：<code>:source $MYVIMRC</code></li>
+<li>然后就可以通过 <code>ctrl + f</code> 这个快捷键来进入命令模式，并且自动的输入 <code>:s/</code>，只需要在后面输入对应的替换的正则表达式就可以了</li>
+</ul>
+<p><code>nnoremap</code> 为普通模式下的非递归映射（此外还有 <code>inoremap</code>，<code>vnoremap</code> 等表示在不同模式下的非递归映射）：</p>
+<ul>
+<li>递归映射：快捷键的映射会被其他的映射所影响</li>
+<li>非递归映射：按下 c 的时候会直接映射到 a 而不会继续映射到 b</li>
+</ul>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">noremap a b</span><br><span class="line">noremap c a</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>对于<code>map</code> 以及 <code>noremap</code> 的详细的介绍:<a target="_blank" rel="noopener" href="http://haoxiang.org/2011/09/vim-modes-and-mappin/">vim 的几种模式和按键映射</a></li>
+</ul>
+<p>Vim 中还有 <code>Leader</code> 键的概念，有点像按快捷键的时候的 <code>ctrl</code> 或者 <code>cmd</code>，不同的是不需要按住它。例如：<code>nnoremap &lt;Leader&gt;j 2j</code>，实现了先按 <code>Leader</code> 键，然后在按 <code>j</code> 来映射到 <code>2j</code> 上的功能。</p>
+<ul>
+<li><code>Leader</code> 键在默认的情况下是 <code>,</code>于是默认情况上面完成了将 <code>,j</code> 映射到 <code>2j</code>的快捷键设置</li>
+<li>可以通过如下配置将 <code>Leader</code> 键修改为其他的按键：<code>let g:mapleader = &quot;\&lt;Space&gt;&quot;</code></li>
+</ul>
+<h1 id="简单配置vim"><a href="#简单配置vim" class="headerlink" title="简单配置vim"></a>简单配置vim</h1><p>默认情况下，在 <code>~/.vimrc</code> 中添加个性化配置（如果不存在这个文件需要自行创建）</p>
+<h2 id="显示相对行号"><a href="#显示相对行号" class="headerlink" title="显示相对行号"></a>显示相对行号</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">set number</span><br><span class="line">set relativenumber</span><br></pre></td></tr></table></figure>
+
+<h1 id="资源链接"><a href="#资源链接" class="headerlink" title="资源链接"></a>资源链接</h1><p><a target="_blank" rel="noopener" href="https://www.yuexun.me/blog/the-vim-guide-for-vs-code-users">写给 VS Code 用户的 Vim 入坑指南</a></p>
+<p><a target="_blank" rel="noopener" href="https://book.douban.com/subject/25869486/">《Vim实用技巧》</a></p>
+<p><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/5426.html">简明 VIM 练级攻略</a></p>
+<p><a target="_blank" rel="noopener" href="https://lug.ustc.edu.cn/wiki/redsky/vim_note/">Vim 笔记-ustc</a></p>
+<p><a target="_blank" rel="noopener" href="https://deerchao.cn/tutorials/regex/regex.htm#top">正则表达式30分钟入门教程</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.vim.org/">vim官网</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://lider7214.cn">leede</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://lider7214.cn/2021/06/14/320Mind/Editor/Vim%E7%AC%94%E8%AE%B0/">http://lider7214.cn/2021/06/14/320Mind/Editor/Vim%E7%AC%94%E8%AE%B0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://lider7214.cn" target="_blank">时间所及，目光之外</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Vim/">Vim</a></div><div class="post_share"><div class="social-share" data-image="/img/avtar.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/06/14/210Math/%E7%94%A8AxMath%E5%86%99%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/" title="常用数学公式编辑语法"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">常用数学公式编辑语法</div></div></a></div><div class="next-post pull-right"><a href="/2021/06/14/320Mind/Editor/vscode%E7%AC%94%E8%AE%B0/" title="vscode笔记"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">vscode笔记</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avtar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">leede</div><div class="author-info__description">修炼理工解构的能力</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">67</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">36</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">47</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/lee7de"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://www.zhihu.com/people/li-da-ren-34-32" target="_blank" title="知乎"><i class="fa-brands fa-zhihu"></i></a><a class="social-icon" href="https://space.bilibili.com/320148219" target="_blank" title="B站"><i class="fa-brands fa-bilibili"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">时间所及，目光之外。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Vim%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0"><span class="toc-number">1.</span> <span class="toc-text">Vim入门笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8EVim%E5%AD%A6%E4%B9%A0"><span class="toc-number">1.1.</span> <span class="toc-text">关于Vim学习</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.2.</span> <span class="toc-text">Quick Start</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="toc-number">2.</span> <span class="toc-text">基本使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%99%AE%E9%80%9A%E6%A8%A1%E5%BC%8F"><span class="toc-number">2.1.</span> <span class="toc-text">普通模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E6%A8%A1%E5%BC%8F"><span class="toc-number">2.2.</span> <span class="toc-text">插入模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%AF%E8%A7%86%E6%A8%A1%E5%BC%8F"><span class="toc-number">2.3.</span> <span class="toc-text">可视模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%A8%A1%E5%BC%8F"><span class="toc-number">2.4.</span> <span class="toc-text">命令行模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="toc-number">2.5.</span> <span class="toc-text">快捷键</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AEvim"><span class="toc-number">3.</span> <span class="toc-text">简单配置vim</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA%E7%9B%B8%E5%AF%B9%E8%A1%8C%E5%8F%B7"><span class="toc-number">3.1.</span> <span class="toc-text">显示相对行号</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B5%84%E6%BA%90%E9%93%BE%E6%8E%A5"><span class="toc-number">4.</span> <span class="toc-text">资源链接</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/12/26/200Nature/%E6%99%AE%E9%80%9A%E7%89%A9%E7%90%86%E5%9F%BA%E7%A1%80/" title="普通物理基础">普通物理基础</a><time datetime="2023-12-26T03:54:20.000Z" title="发表于 2023-12-26 11:54:20">2023-12-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/12/220Engineering/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/" title="人工智能与数理统计">人工智能与数理统计</a><time datetime="2023-06-12T03:17:39.000Z" title="发表于 2023-06-12 11:17:39">2023-06-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/08/100System/%E6%B1%BD%E8%BD%A6%E8%A1%8C%E4%B8%9A%E8%B0%83%E7%A0%94%E7%AC%94%E8%AE%B0/" title="汽车行业调研笔记">汽车行业调研笔记</a><time datetime="2023-06-08T13:44:23.000Z" title="发表于 2023-06-08 21:44:23">2023-06-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/08/220Engineering/CSTheory/%E4%BB%8E%E6%B7%B1%E5%BA%A6%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%88%B0%E4%BA%BA%E7%B1%BB%E8%BE%85%E5%8A%A9%E5%B7%A5%E7%A8%8B/" title="从深度神经网络到人类辅助工程">从深度神经网络到人类辅助工程</a><time datetime="2023-06-08T13:42:28.000Z" title="发表于 2023-06-08 21:42:28">2023-06-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/08/220Engineering/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%90%86%E8%AE%BA%E5%9C%A8%E5%93%AA%E4%B8%AA%E9%98%B6%E6%AE%B5/" title="人工智能理论在哪个阶段">人工智能理论在哪个阶段</a><time datetime="2023-06-08T13:41:41.000Z" title="发表于 2023-06-08 21:41:41">2023-06-08</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By leede</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Welcome to lee de's blog</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"><script>function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '2fffb60e5e9334270e37',
+      clientSecret: '5794ce706b4215118f15ace35c7ef206d27a4565',
+      repo: 'lee7de.github.io',
+      owner: 'lee7de',
+      admin: ['lee7de'],
+      id: '07af1f9d3c358a776c6aeac26206452b',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    getCSS('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css')
+    getScript('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !false) {
+  if (false) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
