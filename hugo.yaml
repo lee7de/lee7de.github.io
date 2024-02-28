@@ -1,0 +1,169 @@
+baseURL: https://lee7de.github.io/
+languageCode: en-us
+title: leede
+# 主题
+theme: PaperMod
+
+enableRobotsTXT: true
+enableInlineShortcodes: true #允许内联短码
+enableEmoji: true # 允许使用 Emoji 表情，建议 true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+paginate: 10    # 每页显示的文章数
+
+# googleAnalytics: 
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+permalinks: #浏览器链接显示方式
+  post: "/:title/"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: "leede's Log"
+  description: "学无止境"
+  keywords: [log, Blog, PaperMod]
+  author: leede
+  # author: ["Me", "You"] # multiple authors
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: true
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "img/avtar.ico"
+    favicon16x16: "img/avtar.ico"
+    favicon32x32: "img/avtar.ico"
+    apple_touch_icon: "img/avtar.ico"
+    safari_pinned_tab: "img/avtar.ico"
+
+  label:
+    text: "leede's Log"
+    icon: img/avtar.ico
+    iconHeight: 15
+
+  # profile-mode 与下面的home模式二选一，这个不如下面简约
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: ExampleSite
+    subtitle: "This is subtitle"
+    imageUrl: "<img location>"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Welcome to leede's Log \U0001F44B"
+    Content: Hi, this is leede.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/lee7de"
+    - name: zhihu
+      url: "https://www.zhihu.com/people/li-da-ren-34-32"
+    - name: bilibili
+      url: "https://space.bilibili.com/320148219"
+    - name: email
+      url: "mailto://lider7214@163.com" # 个人邮箱
+    # - name: x
+    #   url: "https://twitter.com/derli66295509"
+    # - name: stackoverflow
+    #   url: "https://stackoverflow.com"
+
+# 搜索引擎验证网站所有权
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: "XYZabc"
+  #   bing:
+  #     SiteVerificationTag: "XYZabc"
+  #   yandex:
+  #     SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  # 文章修改建议
+  # editPost:
+  #   URL: "https://github.com/lee7de/lee7de.github.io/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 10
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 40  
+    # - identifier: example
+    #   name: example.org
+    #   url: https://example.org
+    #   weight: 30
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    codeFences: true
+    # guessSyntax: true
+    lineNos: true
+    style: monokai
