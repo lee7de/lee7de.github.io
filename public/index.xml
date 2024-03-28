@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Mar 2024 11:34:19 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 08 Mar 2024 10:45:33 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLM Tricks</title>
+      <link>http://localhost:1313/posts/runtime4-engineering/llm-tricks/</link>
+      <pubDate>Fri, 08 Mar 2024 10:45:33 +0800</pubDate>
+      <guid>http://localhost:1313/posts/runtime4-engineering/llm-tricks/</guid>
+      <description>简单问题直接问，把要求写在开头或者结束。 https://arxiv.org/abs/2307.03172 (研究发现简单问题step by step或者COT适得其反)
+复杂问题，按照思维跳数把问题用\n分解或者用伪代码形式描述，同样重点尽量放句子两边。 (研究发现“When separating reasoning steps, newline \n symbol works better than step i, period . or semicolon ;”)
+找灵感头脑风暴，可以让几个AI互相扮演比如模拟审稿人和作者一问一答。
+e.g.
+如果你是这篇文章的审稿人，你对作者提出哪些问题?你会为这篇文章写怎样的评语?
+If you were a reviewer for this article, what questions would you ask the author, and what would you write about this article?
+你是这篇文章的作者审稿人给你的文章review如下，请写一篇rebuttal回复审稿人提出的问题，为自己尽可能争取分数
+You are the author of this article and the reviewer gives you a review of the article below, please write a rebuttal reply to the questions asked by the reviewer and get as many points as possible for yourself</description>
+    </item>
     <item>
       <title>openAI的发展及员工们的战略思想</title>
       <link>http://localhost:1313/posts/basic1-behavior/openai%E7%9A%84%E5%8F%91%E5%B1%95%E5%8F%8A%E5%91%98%E5%B7%A5%E4%BB%AC%E7%9A%84%E6%88%98%E7%95%A5%E6%80%9D%E6%83%B3/</link>

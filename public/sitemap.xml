@@ -3,12 +3,15 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-03-06T11:34:19+08:00</lastmod>
+    <lastmod>2024-03-08T10:45:33+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/basic1-behavior/openai%E7%9A%84%E5%8F%91%E5%B1%95%E5%8F%8A%E5%91%98%E5%B7%A5%E4%BB%AC%E7%9A%84%E6%88%98%E7%95%A5%E6%80%9D%E6%83%B3/</loc>
-    <lastmod>2024-03-06T11:34:19+08:00</lastmod>
+    <loc>http://localhost:1313/posts/runtime4-engineering/llm-tricks/</loc>
+    <lastmod>2024-03-08T10:45:33+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-03-08T10:45:33+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/basic1-behavior/openai%E7%9A%84%E5%8F%91%E5%B1%95%E5%8F%8A%E5%91%98%E5%B7%A5%E4%BB%AC%E7%9A%84%E6%88%98%E7%95%A5%E6%80%9D%E6%83%B3/</loc>
     <lastmod>2024-03-06T11:34:19+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/runtime3-arts/%E9%9A%8F%E7%AC%94-%E6%8A%93%E4%BD%8F%E8%BF%99%E4%B8%80%E5%88%BB%E7%9A%84%E7%BE%8E%E5%A5%BD/</loc>
