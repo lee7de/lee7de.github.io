@@ -11,13 +11,20 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Mar 2024 10:45:33 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 06 Apr 2024 22:40:04 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>如何在做事过程修炼良好的心态</title>
+      <link>http://localhost:1313/posts/mind/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%81%9A%E4%BA%8B%E8%BF%87%E7%A8%8B%E4%BF%AE%E7%82%BC%E8%89%AF%E5%A5%BD%E7%9A%84%E5%BF%83%E6%80%81/</link>
+      <pubDate>Sat, 06 Apr 2024 22:40:04 +0800</pubDate>
+      <guid>http://localhost:1313/posts/mind/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%81%9A%E4%BA%8B%E8%BF%87%E7%A8%8B%E4%BF%AE%E7%82%BC%E8%89%AF%E5%A5%BD%E7%9A%84%E5%BF%83%E6%80%81/</guid>
+      <description>用一些话激励提醒自己保持乐观心态，想起来就翻着看看 过程和结果哪个重要、努力和天赋哪个重要 如果已经有了好的结果，那么我会说过程重要； 如果还没有结果，那么我会认为结果重要 如果没有努力也没有成功或者努力了没找到正确的方法，我会感概一句天赋重要；如果努力了成功，我会说自己的不易并感概努力重要；如果毫不费力成功了，那是不会发生的。 完成一件事首先要战胜自己的心态，其次才是去想整个过程 减少与事情无关的信息摄入，你的大脑会不断存储你看到听到的信息，即使你没有专门去记（短视频×，moba游戏×），非要娱乐就玩点卡牌收集、挂机游戏都行（连连看也不行，因为和moba一样玩的时候要用脑，消耗精力），或者听歌，看个电影，听段相声（就是一乐一笑过后啥都不记得且过程中不消耗精力） 找准了努力的方向后，我们的努力能缩小和控制这些不确定性的负面影响，哪怕有影响也会是微乎其微的。 通过克服内心的恐惧，琢磨正确的方法而生长出来的自信，比起天赋异禀带来的自信，能更让人有踏实感和成就感。 静下心来分析事情瓶颈的成因，而不是把情绪和精力内耗在自我怀疑和否定上 其实，在我看来，做事情的过程就像是一个追光的过程。所谓追光不懈，就是每一个细节认真听讲认真思索，就是日复一日不曾间断的分秒必争的夜晚，就是认真地做好每一件看似无用的小事。相信我，经历足够时间的日积月累，你的这种“行动力”和“持续力”终会成为你最终成功最坚实的后盾。 如果非要说我有什么不一样，我想我可能得益于自己“选择性记忆”的能力。也就是，我很快会忘记那些让我感觉不顺心的事情，同时牢牢记住那些可以给我赋能的事情。 再者，我可能算是“自愈”能力比较强的人吧。我不会对结果有太高的期待，所以我会把自己遇到的每件好事都看成是大好事，而对再坏的事情我都基本有个心理准备，所以于我而言，再坏的事也坏不到哪里去。 保下限思考法 我想，或许恰恰是这种心态给我搭建了一个“舒适区”，让我的情绪一直比较平静，所以临场发挥相对来说就会稳定许多。 经常反思整个事情的当前状态，状态不好了就及时调整。同时，环境很重要，换个环境你也许一把就成了 无论在成功前还是成功后，保持平静心情，感觉差不要自责，感觉好了更勿炫耀，一份平静和从容更能得到上天的欣赏 </description>
+    </item>
+    <item>
       <title>LLM Tricks</title>
-      <link>http://localhost:1313/posts/runtime4-engineering/llm-tricks/</link>
+      <link>http://localhost:1313/posts/engineering/llm-tricks/</link>
       <pubDate>Fri, 08 Mar 2024 10:45:33 +0800</pubDate>
-      <guid>http://localhost:1313/posts/runtime4-engineering/llm-tricks/</guid>
+      <guid>http://localhost:1313/posts/engineering/llm-tricks/</guid>
       <description>简单问题直接问，把要求写在开头或者结束。 https://arxiv.org/abs/2307.03172 (研究发现简单问题step by step或者COT适得其反)
 复杂问题，按照思维跳数把问题用\n分解或者用伪代码形式描述，同样重点尽量放句子两边。 (研究发现“When separating reasoning steps, newline \n symbol works better than step i, period . or semicolon ;”)
 找灵感头脑风暴，可以让几个AI互相扮演比如模拟审稿人和作者一问一答。
@@ -29,9 +36,9 @@ You are the author of this article and the reviewer gives you a review of the ar
     </item>
     <item>
       <title>openAI的发展及员工们的战略思想</title>
-      <link>http://localhost:1313/posts/basic1-behavior/openai%E7%9A%84%E5%8F%91%E5%B1%95%E5%8F%8A%E5%91%98%E5%B7%A5%E4%BB%AC%E7%9A%84%E6%88%98%E7%95%A5%E6%80%9D%E6%83%B3/</link>
+      <link>http://localhost:1313/posts/behavior/openai%E7%9A%84%E5%8F%91%E5%B1%95%E5%8F%8A%E5%91%98%E5%B7%A5%E4%BB%AC%E7%9A%84%E6%88%98%E7%95%A5%E6%80%9D%E6%83%B3/</link>
       <pubDate>Wed, 06 Mar 2024 11:34:19 +0800</pubDate>
-      <guid>http://localhost:1313/posts/basic1-behavior/openai%E7%9A%84%E5%8F%91%E5%B1%95%E5%8F%8A%E5%91%98%E5%B7%A5%E4%BB%AC%E7%9A%84%E6%88%98%E7%95%A5%E6%80%9D%E6%83%B3/</guid>
+      <guid>http://localhost:1313/posts/behavior/openai%E7%9A%84%E5%8F%91%E5%B1%95%E5%8F%8A%E5%91%98%E5%B7%A5%E4%BB%AC%E7%9A%84%E6%88%98%E7%95%A5%E6%80%9D%E6%83%B3/</guid>
       <description>openAI的官网有许多可以学习的内容，通过研究感兴趣的内容，提高自己的思维素养和能力水平。持续更新此篇文章。
 认识openAI 2015公司情况
 OpenAI 的研究总监是世界机器学习专家之一 Ilya Sutskever。我们的 CTO 是 Greg Brockman，他是 Stripe 的前任 CTO。该小组的其他创始成员都是世界级的研究工程师和科学家：Trevor Blackwell、Vicki Cheung、Andrej Karpathy、Durk Kingma、John Schulman、Pamela Vagata 和 Wojciech Zaremba。 Pieter Abbeel、Yoshua Bengio、Alan Kay、Sergey Levine 和 Vishal Sikka 是该小组的顾问。 OpenAI 的联合主席是 Sam Altman 和 Elon Musk。
@@ -39,9 +46,9 @@ OpenAI’s research director is Ilya Sutskever, one of the world experts in mach
     </item>
     <item>
       <title>随笔：抓住这一刻的美好</title>
-      <link>http://localhost:1313/posts/runtime3-arts/%E9%9A%8F%E7%AC%94-%E6%8A%93%E4%BD%8F%E8%BF%99%E4%B8%80%E5%88%BB%E7%9A%84%E7%BE%8E%E5%A5%BD/</link>
+      <link>http://localhost:1313/posts/arts/%E9%9A%8F%E7%AC%94-%E6%8A%93%E4%BD%8F%E8%BF%99%E4%B8%80%E5%88%BB%E7%9A%84%E7%BE%8E%E5%A5%BD/</link>
       <pubDate>Sun, 03 Mar 2024 22:33:09 +0800</pubDate>
-      <guid>http://localhost:1313/posts/runtime3-arts/%E9%9A%8F%E7%AC%94-%E6%8A%93%E4%BD%8F%E8%BF%99%E4%B8%80%E5%88%BB%E7%9A%84%E7%BE%8E%E5%A5%BD/</guid>
+      <guid>http://localhost:1313/posts/arts/%E9%9A%8F%E7%AC%94-%E6%8A%93%E4%BD%8F%E8%BF%99%E4%B8%80%E5%88%BB%E7%9A%84%E7%BE%8E%E5%A5%BD/</guid>
       <description>在某个瞬间，想起大学的某个下午，阳光洒落在教学楼的教室里，给黑板前书写的老师蒙上一层细密的金黄色，某一刻回头的瞬间，老师看向学生优雅清丽的身姿，惊艳了一整个夏天，那时候一想到两个学期后就不能见到这么知性温雅的老师，就没来由的一阵难受，也很不希望那一刻到来。
 时间无情，转眼间大学毕业两年了，网络上漫游时忽地想到多年前的感动，又在QQ中找到了老师，点进老师的动态，或许能有什么可供回忆的素材，就真的发现了老师和新一届学生的留影，可照片中朴素的身影却没能像年少时给我无限的光彩，只看到一位普通的老师，普通地将知识和煦地传授给每一位学生的老师，再也看不到那个我在大学时想要努力留住的美好身影。
 美好终究被时间冲淡了，当初的悸动像是一场梦，我不禁发散，这种感觉，这种过去念念不忘，过了一段时间却没有了的感觉是时常发生的，小时候嘴馋的零食、放学后期待的动画片情节、高中读小说时的手不释卷、管束时对手机自由的向往……太多的美好到了现在轻易地就能得到，却也没有了那时候的快乐。
@@ -49,42 +56,40 @@ OpenAI’s research director is Ilya Sutskever, one of the world experts in mach
     </item>
     <item>
       <title>The Impact of LLM on Society</title>
-      <link>http://localhost:1313/posts/runtime2-society/the-impact-of-llm-on-society/</link>
+      <link>http://localhost:1313/posts/society/the-impact-of-llm-on-society/</link>
       <pubDate>Fri, 01 Mar 2024 16:36:04 +0800</pubDate>
-      <guid>http://localhost:1313/posts/runtime2-society/the-impact-of-llm-on-society/</guid>
+      <guid>http://localhost:1313/posts/society/the-impact-of-llm-on-society/</guid>
       <description>大模型真的给行业带来了别样的活力，技术、灵感每天井喷式出现，从业者充满了干劲，对世界的影响还远远没有发酵出来，遥想未来，不禁令人心潮澎湃，也特别地想到当时钱学森老先生对虚拟技术的分析，现在加以理解结合进大模型的社会影响，十分契合，特有此图。</description>
     </item>
     <item>
       <title>Deep Learning Summary</title>
-      <link>http://localhost:1313/posts/runtime4-engineering/deeplearningsummary/</link>
+      <link>http://localhost:1313/posts/engineering/deeplearningsummary/</link>
       <pubDate>Wed, 28 Feb 2024 10:41:23 +0800</pubDate>
-      <guid>http://localhost:1313/posts/runtime4-engineering/deeplearningsummary/</guid>
+      <guid>http://localhost:1313/posts/engineering/deeplearningsummary/</guid>
       <description>本文的形成，特别感谢李沐老师的动手学深度学习课程、LUG主题分享中庄思源学长的深度学习分享以及众多互联网文章。
 当人们谈论Artificial Intelligence（人工智能）时，其实说的是Machine Learning（机器学习），而目前的Machine Learning，主要做的是Deep Learning（深度学习）；Deep Learning 做的主要内容是训练Neural Networks（神经网络），训练 Nerual Networks其实就是在拟合函数。而确实相当多的任务可以表示函数拟合。 从函数拟合角度看，深度学习理论上可以用足够的数据训练足够大的感知机做预测。实际上，很难让感知机收敛到模拟各种任务，我们需要精心设计各种结构来更好地认识现实世界中的数据，比如图像用卷积、序列数据用RNN以及注意力机制等 深度学习也可以理解为一门编程语言，编写构造者对这个世界的理解 当下经典的深度学习工作流 目前深度学习应用典型的工作流包括数据、模型训练、模型部署这三方面。
 数据Data Collecting, cleaning, labeling Data storage 不正确的假设：Covariate/concept/label偏移/IID以外的数据（时序、图） 多模块数据 一些例子 数据采集硬件 数据采集质量 机器协助数据标注 数据标注系统（如何管理标注员和标注质量，如何自动分配标注任务） 数据质量的判断 数据清洗的分布式系统（动态调度） 数据存储（数据接口，压缩，备份，数据更新，某些特殊数据（比如明星的图片）） 模型训练 Training Model selection, hyper-parameter tuning AutoML Distributed training Preprocessing Monitoring Debugging、模型验证、模型融合 Visualization 一些例子 大规模分布式训练 各种自动调参 训练过程的监控和调试 数据增强框架（特殊的噪声，特定的场景（车牌等）） 可视化和解释结果 如何在第三方平台（比如云计算）中进行计算而不泄漏敏感数据 如何充分利用专用硬件 如何降低能耗 模型部署 Serving Online serving、Offline serving 模型蒸馏 Third-party platform 一些例子 线上平台如何和现有web框架结合 如何部署在线下设备，特别是算力不足的情况，比如手机等 如何保证公开的模型不泄露训练数据等敏感内容 如何处理对抗样本 模型可解释吗？能够充分信任吗？ The Rise of Full Stack Bottlenecks in AI applications（当下AI全栈的瓶颈） Deployment concerns</description>
     </item>
     <item>
-      <title>健康：个人发展的基石</title>
-      <link>http://localhost:1313/posts/basic3-human/%E5%81%A5%E5%BA%B7%E8%B0%83%E4%BC%98%E4%B8%8E%E5%8F%91%E5%B1%95%E7%BB%BC%E5%90%88/</link>
+      <title>如何塑造完美的身体状态——健康生活手册</title>
+      <link>http://localhost:1313/posts/human/%E5%81%A5%E5%BA%B7%E8%B0%83%E4%BC%98%E4%B8%8E%E5%8F%91%E5%B1%95%E7%BB%BC%E5%90%88/</link>
       <pubDate>Sun, 11 Feb 2024 15:50:38 +0800</pubDate>
-      <guid>http://localhost:1313/posts/basic3-human/%E5%81%A5%E5%BA%B7%E8%B0%83%E4%BC%98%E4%B8%8E%E5%8F%91%E5%B1%95%E7%BB%BC%E5%90%88/</guid>
-      <description>健康包括身体和心理两方面的健康，身体健康就是我们通常最直观感受到的没有疾病侵扰、气色红润、行动自如等等，而心理健康往往容易被我们忽视，它也是健康重要的一部分，主要指的是人在社会生活中内心安定、精神平稳。
-身体健康和心理健康有着密切关系。身体健康主导心理健康，而心理健康反过来是身体健康的重要影响因素，有一些生理性的疼痛就是情绪心理异常造成的。
-心理健康 心理健康是可以通过身体动作干预的，一些日常行为比如深呼吸可以缓解大脑供氧，进而缓解情绪。
-同时，从较长的人生尺度上来看，更多的关注当下能避免焦虑等情绪，带来短期收益，但未来发展的持续性，我们还需要思考未来指引方向，于是心理关注内容的一个比较合理的比例——当下：中长期：人生=7:2:1。
-这里关于思考人生，多说两句：有人认为谈人生很虚无，让人变得不切实际，实际上并不是，虚无是把握的尺度的问题，而思考人生本身是一种“精神养生”。
-养生的目的在于维持身体健康，防止以后因为衰老或者意外啥的而生病，相似的，多思考人生的大问题，可以维持精神的健康，防止未来直面生活的时候发生精神滑向那两个极端、不知道看待生命与死亡等的“疾病”，从实用目的出发，思考一些大问题来确定更合适的方向也是十分重要的。
-身体健康 我们把身体比作计算机，对于计算机的控制，普通人是通过用户界面交互的，程序员可以通过更内部的命令行、debug工具实现更深度的交互。而身体也是如此，普通人通过外在的皮肤状态、直观感受与身体交互，更专业的人士特别是医生可以生理指标观察身体状态，从而对身体系统debug、调优。
+      <guid>http://localhost:1313/posts/human/%E5%81%A5%E5%BA%B7%E8%B0%83%E4%BC%98%E4%B8%8E%E5%8F%91%E5%B1%95%E7%BB%BC%E5%90%88/</guid>
+      <description>完美的身体状态，基本要求是身体和心理两方面健康，然后综合性地认识自己，更好地成为你自己。
+身体健康是健康生活的基石，看作是狭义的健康。这方面的理论来源是医学、生物学等。
+最直观感受到的没有疾病侵扰、气色红润、行动自如等等。 在医学里，则是各项生理指标正常。 而心理健康往往容易被我们忽视，它也是健康重要的一部分，这方面的理论来源是认知神经科学、心理学、社会学等。
+指的是人在社会生活中的内心安定、精神平稳。 当前的社会节奏下，宏观和微观的局势对人们的心理发展都不太友好，我们更需要进行压力管理，培养看待事情的思维观念。 身体和心理的健康是一个整体的系统。身体健康主导心理健康，而心理健康反过来是身体健康的重要影响因素，比如生理性的疼痛、过劳肥等症状，往往是因为心理异常。
+基本健康 身体健康——器官、睡眠、饮食、运动 肝 肾 心脏 肺 胃 睡眠 饮食 运动 我们把身体比作计算机，对于计算机的控制，普通人是通过用户界面交互的，程序员可以通过更内部的命令行、debug工具实现更深度的交互。而身体也是如此，普通人通过外在的皮肤状态、直观感受与身体交互，更专业的人士特别是医生可以生理指标观察身体状态，从而对身体系统debug、调优。
 落实到具体行动，身体健康的控制主要是通过宏观的睡眠、饮食、运动等行为来调优微观的激素、血糖、多巴胺等变化水平。
-健康调优方法 睡眠
+睡眠
 影响因素：光照、体温 实践： 绝大多数人，6-8 小时的睡眠时长是比较健康的 起床后应该到外面去接触阳光，持续 2-10 分钟 在晚上要尽量减少光源的接触 如果不可避免需要在晚上接触光源，处于较低位置，暗淡的红光，蜡烛之类的会相对好一些。如果要看电脑，建议使用 blue blockers 眼镜，这跟一些电脑软件会自动调节屏幕色温的效果可能类似 傍晚观察落日，对于后续入睡也有帮助，甚至能减轻晚上摄入光照的负面影响 人一天中的精神状态一般会在中间有个短暂的低谷，所以午睡对于有些人可能是有帮助的。也可以用一些其它的非睡眠深度休息的方式来替代，如 Yoga，冥想，自我催眠等。 体温对生物钟周期的影响： 早上洗冷水澡，会让人快速升温，从而把睡眠周期往前移（早起）。 晚上锻炼身体，会让人保持高体温，从而延后周期（晚睡）。 可以选购一些自动控制体温的智能床垫来提升睡眠质量。 一般建议的锻炼时间：醒来后 30 分钟，3 小时和 11 小时这三个时间点。不过总体来看好像影响度比较小。 饮食
 实践 咖啡因会占据腺苷（adenosine）的受体，阻断入睡的信号。有不少文章都提到中午之后尽量不要喝咖啡，但目前没有科学实验表明咖啡因对所有人的效果是一样的，有人在下午 5 点喝咖啡也能正常入睡。 镁，对入睡有帮助。 芹黄素也能帮助入睡，但要注意对雌性激素的影响。 建议不要摄入太多牛磺酸。 不建议通过摄入褪黑素来帮助入睡，褪黑素药物本身的规格把控不严格，且褪黑素容易引起抑郁情绪。 中午可以吃低卡路里以及含酪氨酸的食物，如坚果，大豆，部分蔬菜等，提升多巴胺，肾上腺素，保持清醒。 晚上则可以吃点淀粉，白肉等富含色氨酸的食物，进而转化为血清素，会让人更加平静，容易入睡。 fasting 基础：如果想享受 fasting 的基础收益，最简单的执行原则是起床后至少 1 小时内不要吃东西，同时睡前的 2-3 小时不要吃任何东西。 高阶：目前研究结果中最理想的进食窗口是 8 小时，结合社会习俗等，一般比较合理的时间在 10-18 点或 12-20 点的范围 如果想通过健身来增肌，建议可以把这个时间窗口往前移，因为早上摄入蛋白质会对肌肉增长有益。而健身的时间可以自由选择。 尽量保证这个窗口时间的稳定性，也非常重要。否则就跟频繁倒时差产生的效果差不多，会打不少收益折扣。 如果想尝试高阶 fasting，建议逐渐切换进食习惯，例如每两天缩短 1 小时的进食窗口，逐渐达到理想的 8 小时。 不吃任何东西，并不是说连水也不能喝，主要依据是血糖水平 如果禁食期间觉得有些头晕，颤抖，并不需要立刻进食或摄入糖分。可以喝一点盐水（可以加柠檬汁），一般就能很好的缓解症状 肠道 如果要改善肠道菌群生态，最好的方式是一天两次摄入天然发酵类食品。 高纤维食物对于肠道菌群生态的维护是有益的，建议日常饮食以植物类食物为主，尽量避免深度加工食品的摄入，控制糖的摄入。 益生菌的效果没有广泛研究支持，且这类产品的监管很有限。益生元的效果也是好坏参半，缺乏多样性，溶解速度太快等问题都使总体效果存疑。 地中海饮食相比生酮饮食来说对健康的影响效果接近，但更容易坚持遵循。另外生酮饮食如果长期实践可能有一定的风险。所以总体更推荐地中海饮食结构。另外值得参考的是中国居民膳食指南，或许更适合东方人的饮食习惯。 多巴胺</description>
     </item>
     <item>
       <title>2023年度总结</title>
-      <link>http://localhost:1313/posts/basic1-behavior/planning/2023%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</link>
+      <link>http://localhost:1313/posts/behavior/planning/2023%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</link>
       <pubDate>Wed, 27 Dec 2023 10:39:12 +0800</pubDate>
-      <guid>http://localhost:1313/posts/basic1-behavior/planning/2023%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</guid>
+      <guid>http://localhost:1313/posts/behavior/planning/2023%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</guid>
       <description>总结和回顾，以防迷失在细节的海洋里。
 2023年 完成了工作到学习的过渡
 编程到数据结构与算法、计组与OS、计网的理论学习 扩充理论，构建出了基本的计算机世界 持续跟进前沿动态，主要关注大模型，还有机器人、算法研究、系统理论等，保持对计算机各方面动向的热情 深化了工科数学理论，在每门学科的理论和实践上找到了处理问题的关键点，形成总体到细节的学习方法论与习惯 同时学习着更多系统理论，尝试在机器学习与系统交叉点做出一些成绩 读了《语言学的邀请》、《钢铁、枪炮与病菌》等书 思考问题更温润了，面对逆境不那么尖锐了 2024年 会继续学习，同时注意提高生活的品质
@@ -106,9 +111,9 @@ OpenAI’s research director is Ilya Sutskever, one of the world experts in mach
     </item>
     <item>
       <title>《语言学的邀请》读书笔记</title>
-      <link>http://localhost:1313/posts/runtime3-arts/%E8%AF%AD%E8%A8%80%E5%AD%A6%E7%9A%84%E9%82%80%E8%AF%B7/</link>
+      <link>http://localhost:1313/posts/arts/%E8%AF%AD%E8%A8%80%E5%AD%A6%E7%9A%84%E9%82%80%E8%AF%B7/</link>
       <pubDate>Fri, 21 Apr 2023 21:02:37 +0800</pubDate>
-      <guid>http://localhost:1313/posts/runtime3-arts/%E8%AF%AD%E8%A8%80%E5%AD%A6%E7%9A%84%E9%82%80%E8%AF%B7/</guid>
+      <guid>http://localhost:1313/posts/arts/%E8%AF%AD%E8%A8%80%E5%AD%A6%E7%9A%84%E9%82%80%E8%AF%B7/</guid>
       <description>感谢《语言学的邀请》一书，给我打开了观察世界的另一个角度，让我知道人类社会不确定性带来的美妙与曲折。
 匆匆成文，许多感受未能完整地表达成文，于是带着这些思考在生活中实践，等有了更多的经历后或许再给这篇文章一个更好的内容。
 语言与行动 1 语言凝聚成社会 我们人类通过语言凝聚，发挥出1+1大于2的作用，在大自然中发展壮大到今天这个地步。作为个体的人，不管是否自己知道，ta在生活中受人类群体的影响，特别是ta听到的、运用的言辞，以及被ta无意中对语言所下的臆断所支配。
@@ -143,9 +148,9 @@ OpenAI’s research director is Ilya Sutskever, one of the world experts in mach
     </item>
     <item>
       <title>2022年度总结</title>
-      <link>http://localhost:1313/posts/basic1-behavior/planning/2022%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</link>
+      <link>http://localhost:1313/posts/behavior/planning/2022%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</link>
       <pubDate>Wed, 04 Jan 2023 23:47:06 +0800</pubDate>
-      <guid>http://localhost:1313/posts/basic1-behavior/planning/2022%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</guid>
+      <guid>http://localhost:1313/posts/behavior/planning/2022%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</guid>
       <description>今年的主题词是：选择。
 2022：选择 选择发生在人的一生中，某个行动、某个阶段&amp;hellip;而2022年发生的不少选择于我而言，当得上是人生中数一数二的重大选择了。
 这种选择带来的改变是我更清楚地认识到自己所喜欢的计算机行业的细分内容，我自身在解决问题、学习新知识的不足，未来在塑造性格和锻炼能力努力的方向，同时在不同的成长环境中我又多了解社会的形形色色。
@@ -175,9 +180,9 @@ OpenAI’s research director is Ilya Sutskever, one of the world experts in mach
     </item>
     <item>
       <title>2022年中总结</title>
-      <link>http://localhost:1313/posts/basic1-behavior/planning/2022%E5%B9%B4%E4%B8%AD%E6%80%BB%E7%BB%93/</link>
+      <link>http://localhost:1313/posts/behavior/planning/2022%E5%B9%B4%E4%B8%AD%E6%80%BB%E7%BB%93/</link>
       <pubDate>Mon, 27 Jun 2022 19:16:24 +0800</pubDate>
-      <guid>http://localhost:1313/posts/basic1-behavior/planning/2022%E5%B9%B4%E4%B8%AD%E6%80%BB%E7%BB%93/</guid>
+      <guid>http://localhost:1313/posts/behavior/planning/2022%E5%B9%B4%E4%B8%AD%E6%80%BB%E7%BB%93/</guid>
       <description>2022年的年中，经历了一个人生的小总结阶段，确定了积极向上的生活态度，有着自己坚定的规划，同时也更坦然地面对不足的自己，然后去完善、修行。
 （一）生活是一场修行 2022年的上半年，我遇到了Mr. Ju,他积极向上的态度刺激了我积累的潜能，让我好中向好。
 这半年来，我梳理了自己，更坦然地面对有缺陷的自己，进而更积极地让自己一点点变好。
@@ -193,9 +198,9 @@ Anyway，面向未来，just do it！
     </item>
     <item>
       <title>二十四节气的英文表达</title>
-      <link>http://localhost:1313/posts/basic2-mind/%E4%BA%8C%E5%8D%81%E5%9B%9B%E8%8A%82%E6%B0%94%E7%9A%84%E8%8B%B1%E6%96%87%E8%A1%A8%E8%BE%BE/</link>
+      <link>http://localhost:1313/posts/mind/%E4%BA%8C%E5%8D%81%E5%9B%9B%E8%8A%82%E6%B0%94%E7%9A%84%E8%8B%B1%E6%96%87%E8%A1%A8%E8%BE%BE/</link>
       <pubDate>Sat, 05 Feb 2022 23:00:58 +0800</pubDate>
-      <guid>http://localhost:1313/posts/basic2-mind/%E4%BA%8C%E5%8D%81%E5%9B%9B%E8%8A%82%E6%B0%94%E7%9A%84%E8%8B%B1%E6%96%87%E8%A1%A8%E8%BE%BE/</guid>
+      <guid>http://localhost:1313/posts/mind/%E4%BA%8C%E5%8D%81%E5%9B%9B%E8%8A%82%E6%B0%94%E7%9A%84%E8%8B%B1%E6%96%87%E8%A1%A8%E8%BE%BE/</guid>
       <description>假期观看冬奥开幕式使用了24节气作为开场的倒计时，效果很是惊艳，其中对各个节气的英文表达引起了我的注意，由此总结了其英文表达及相关古诗词的英文描述。
 使用24节气作为倒计时 在中国农历中，一年有24个节气，立春居首。
 A chinese lunar year has 24 solar terms, The Beginning of Spring comes first.
@@ -208,9 +213,9 @@ Let&amp;rsquo;s greet the arrival of spring with a count down.
     </item>
     <item>
       <title>2021年度总结</title>
-      <link>http://localhost:1313/posts/basic1-behavior/planning/2021%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</link>
+      <link>http://localhost:1313/posts/behavior/planning/2021%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</link>
       <pubDate>Wed, 02 Feb 2022 22:09:17 +0800</pubDate>
-      <guid>http://localhost:1313/posts/basic1-behavior/planning/2021%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</guid>
+      <guid>http://localhost:1313/posts/behavior/planning/2021%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</guid>
       <description>2021年末总结
 2022年寒假在家，想起来一年发生了很多，便计划着写一点东西。
 去年的年末总结也是在家里写的，外面天很冷，那时候正是做项目的时候，是一个关于语音合成的工程。我在网上到处学习，想着做出点东西。
@@ -227,9 +232,9 @@ TODO：
     </item>
     <item>
       <title>工程项目经验总结</title>
-      <link>http://localhost:1313/posts/runtime5-nature/%E5%B7%A5%E7%A8%8B%E9%A1%B9%E7%9B%AE%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/</link>
+      <link>http://localhost:1313/posts/nature/%E5%B7%A5%E7%A8%8B%E9%A1%B9%E7%9B%AE%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/</link>
       <pubDate>Wed, 02 Feb 2022 18:50:51 +0800</pubDate>
-      <guid>http://localhost:1313/posts/runtime5-nature/%E5%B7%A5%E7%A8%8B%E9%A1%B9%E7%9B%AE%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/</guid>
+      <guid>http://localhost:1313/posts/nature/%E5%B7%A5%E7%A8%8B%E9%A1%B9%E7%9B%AE%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/</guid>
       <description>特别感谢：本文的经验很多来源于thu智能体大赛的刘家宏学长，消化之后结合自己的经历体会有了如下的总结。
 工程项目开发都是围绕一个具体的问题展开，他们的执行有着大致相同的流程：
 启动项目之前，充分调研搜集相关信息，保持与外界沟通； 启动项目后，快速建立模式，不断迭代修改，项目质量由修改次数塑造； 完成项目的初步闭环，运行维护项目，思考更多内容，由具体情况决定。 阶段0：项目分析 目的：认识项目 什么样的项目、大概有什么难度、刚开始需要完成哪些工作 项目的关键点、如何打出差异、可能遇到的问题 最终想要达到的状态 不遗漏现实因素的影响，力求不在基本规则上产生失误 高效地利用工程项目的核心特点建立竞争/存在优势 具有自己的特点，能有效地在未来面对各种情况时做出良好的应对 充分考虑与主流内容的适应，稳定性好，几乎不会因为各种原因发生致命错误 阶段1：接触工程 培养兴趣，带着好奇心去了解感受这个工程内容，重在体验
@@ -258,9 +263,9 @@ TODO：
     </item>
     <item>
       <title>2021年中随笔</title>
-      <link>http://localhost:1313/posts/basic1-behavior/planning/2021%E5%B9%B4%E4%B8%AD%E6%80%BB%E7%BB%93/</link>
+      <link>http://localhost:1313/posts/behavior/planning/2021%E5%B9%B4%E4%B8%AD%E6%80%BB%E7%BB%93/</link>
       <pubDate>Tue, 01 Jun 2021 17:10:53 +0800</pubDate>
-      <guid>http://localhost:1313/posts/basic1-behavior/planning/2021%E5%B9%B4%E4%B8%AD%E6%80%BB%E7%BB%93/</guid>
+      <guid>http://localhost:1313/posts/behavior/planning/2021%E5%B9%B4%E4%B8%AD%E6%80%BB%E7%BB%93/</guid>
       <description>今天是2021年的六月一号，大学知识的学习到了末尾，剩下的工作有收尾和消化之前学习的内容，融汇成能力的基石，为考研、未来的发展做准备。
 其实，这段时间以来，不断搜集网上的信息，接收正面和负面的反馈、反省自己的种种行为，内心有时候感觉到真的好无力。但是，仔细看看自己，发现过去的生活对繁杂信息的依赖太多，少了很多独立思考，成长的轨迹也不纯粹，生活永远在焦虑中被一种无形的压力催促着。
 需要改变。
@@ -284,9 +289,9 @@ TODO：
     </item>
     <item>
       <title>2020年度总结</title>
-      <link>http://localhost:1313/posts/basic1-behavior/planning/2020%E5%B9%B4%E6%9C%AB%E6%80%BB%E7%BB%93/</link>
+      <link>http://localhost:1313/posts/behavior/planning/2020%E5%B9%B4%E6%9C%AB%E6%80%BB%E7%BB%93/</link>
       <pubDate>Fri, 01 Jan 2021 10:35:43 +0800</pubDate>
-      <guid>http://localhost:1313/posts/basic1-behavior/planning/2020%E5%B9%B4%E6%9C%AB%E6%80%BB%E7%BB%93/</guid>
+      <guid>http://localhost:1313/posts/behavior/planning/2020%E5%B9%B4%E6%9C%AB%E6%80%BB%E7%BB%93/</guid>
       <description>今年的主题是继续奋斗，创造灿烂的辉煌！
 概述 回顾去年的点滴，自己还是成长了，进步了。让我体会到这一点的是体育课最后的考核，以前我的想法始终是拼命跑、拼命练习，总能越来越快的。某一天，“方法比努力重要”这句话，如同夜空中划破的闪电，启迪我思考改进之道。我分析跑步的因素，观察自己的步频、步幅特点，早上去操场体会半小时左右，感受运动中的变化，改进、练习。
 我发现还不够，长距离的奔跑需要呼吸的支持，于是我又开始思考呼吸和步子。在一次又一次的实验中，我改变了自己，清楚地感觉到自己比以前，强了。结果也在意料之中，我的跑步成绩由之前测量的4分/1000米变成了3分27秒/1000米。
@@ -340,9 +345,9 @@ B站追完了10+经典电影9分以上
     </item>
     <item>
       <title>2021年度总结</title>
-      <link>http://localhost:1313/posts/basic1-behavior/planning/2020%E5%B9%B4%E4%B8%AD%E5%8F%8D%E6%80%9D/</link>
+      <link>http://localhost:1313/posts/behavior/planning/2020%E5%B9%B4%E4%B8%AD%E5%8F%8D%E6%80%9D/</link>
       <pubDate>Wed, 15 Apr 2020 09:35:43 +0800</pubDate>
-      <guid>http://localhost:1313/posts/basic1-behavior/planning/2020%E5%B9%B4%E4%B8%AD%E5%8F%8D%E6%80%9D/</guid>
+      <guid>http://localhost:1313/posts/behavior/planning/2020%E5%B9%B4%E4%B8%AD%E5%8F%8D%E6%80%9D/</guid>
       <description>年中各种汇总、还有鸡汤。——结了几门课，不能闲散了，规划规划好好干。
 三月末的一篇随笔——寻找 我在时光的流逝中寻找自我。
 这一段时间，现在回过头看，像是一副漫长的画卷，描绘着一点一滴复杂起伏的内心跌宕。从放假最初的自己说起，心里踌躇满志，一心是想着做出点事情来证明自己。但是越是这样迫切，反倒越不能沉下心来思考前前后后的得失方向。说真的，浮躁是上学期最大的败笔，回想自己在学校中的一言一行，拘谨与约束是一个阻碍，另一个阻碍便是急于求成。对别人的时候，许多道理都可以明白，可是到了自己，却往往自我怀疑，在摇摆中错失光阴和许多东西。如今看自己，也还缺少一些沉淀，当然比两个月的那个自己好多了。从浮躁中摆脱，是向前行走的必然，多一些思考，多一些坚持与温柔，原则与守候，我想结局绝对不会差。
