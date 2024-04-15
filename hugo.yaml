@@ -95,8 +95,8 @@ params:
       url: "https://github.com/lee7de"
     - name: zhihu
       url: "https://www.zhihu.com/people/lee7de"
-    - name: bilibili
-      url: "https://space.bilibili.com/320148219"
+    # - name: bilibili
+    #   url: "https://space.bilibili.com/320148219"
     - name: email
       url: "mailto://lider7214@163.com" # 个人邮箱
     # - name: x
