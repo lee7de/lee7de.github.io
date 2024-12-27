@@ -11,8 +11,27 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Apr 2024 22:40:04 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Dec 2024 20:22:35 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>计算机基础面试百问</title>
+      <link>http://localhost:1313/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E7%99%BE%E9%97%AE/</link>
+      <pubDate>Fri, 27 Dec 2024 20:22:35 +0800</pubDate>
+      <guid>http://localhost:1313/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E7%99%BE%E9%97%AE/</guid>
+      <description>先放一个草稿，慢慢补充
+计算机基础面试百问 C/C++语言程序设计 语言整体认识 C和C++的区别 C++多态是什么，有什么优点 继承和组合 C语言选择题，判断哪个是注释符 分析一下UML和C++的区别 c语言中编译(控制可能是别的词)是用来干什么的 编译的含义 C语言基本单元是什么 问了c/cpp的一些关键字 好像有extern inline 还有几个我没听清楚- -然后动态链接和静态链接对了还有个dll文件是干嘛的 字典的操作什么（python？） C语言里面main函数有什么参数？分别有什么作用？ C语言怎么统计一个函数被调用次数？ 变量与运算 解释下局部变量和全局变量，与作用域的关系
+C语言中局部变量以及其存储位置 局部变量属于什么区 位运算符的优先级
+&amp;amp;&amp;amp;、&amp;amp;、||、|四个运算符哪个优先级最低？
+不用额外空间实现两个变量值互换
+a=3，a+=a-=a*a =-12
+int x = 2; x &amp;raquo; 2 / x &amp;raquo; 1 = ?
+int b=2; 求(b&amp;raquo;2)/(b&amp;raquo;1)
+int a = 511, *b = &amp;amp;a; printf(&amp;quot;%d&amp;quot;, *b);
+a 不确定 b a的地址 c 512 d 511
+流程控制
+for(i=2;i==0) 循环几遍 if-else怎么匹配的 数组、指针、函数 判断数组定义那个错误
+二维数组查第二行第三列</description>
+    </item>
     <item>
       <title>如何在做事过程修炼良好的心态</title>
       <link>http://localhost:1313/posts/mind/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%81%9A%E4%BA%8B%E8%BF%87%E7%A8%8B%E4%BF%AE%E7%82%BC%E8%89%AF%E5%A5%BD%E7%9A%84%E5%BF%83%E6%80%81/</link>

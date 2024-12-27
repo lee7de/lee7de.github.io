@@ -17,7 +17,8 @@ draft: false
 
     *   用它给出的**代码**渲染出真实形象——（自回归、模式匹配...）
 
-![11](index.assets/640.gif)
+<img src="index.assets/640.gif" alt="图片" style="zoom:67%;" />
+
 *   参数量级：可视化感受，https://bbycroft.net/llm
 
     | Model                                              | `Params` | 备注（参数）                  |
@@ -106,9 +107,10 @@ draft: false
 
 *   语音：[HuBERT: Self-supervised representation learning for speech recognition, generation, and compression](https://ai.meta.com/blog/hubert-self-supervised-representation-learning-for-speech-recognition-generation-and-compression/)，https://arxiv.org/pdf/2106.07447.pdf
 
-![image-20240412131942170](index.assets/image-20240412131942170.png)
+    <img src="index.assets/image-20240412131942170.png" alt="image-20240412131942170" style="zoom: 25%;" />
+
     *   [Are discrete units necessary for Spoken Language Modeling?](https://scontent-sea1-1.xx.fbcdn.net/v/t39.2365-6/305026160_5513546312070464_576677987961387050_n.pdf?_nc_cat=104&ccb=1-7&_nc_sid=3c67a6&_nc_ohc=JRw3U--YABMAb6DLBPq&_nc_ht=scontent-sea1-1.xx&oh=00_AfCyNVimWlYJwoTvCLc4JPbntVi5Szn6ReqH21nJjW3AuA&oe=661E8C5D)
-        *   [SynthVSR: Scaling Up Visual Speech Recognition With Synthetic Supervision](https://scontent-sea1-1.xx.fbcdn.net/v/t39.2365-6/342351043_250090610744182_587763051308550377_n.pdf?_nc_cat=107&ccb=1-7&_nc_sid=3c67a6&_nc_ohc=SsXQzmf-F2oAb4fIR9b&_nc_ht=scontent-sea1-1.xx&oh=00_AfACtrfUcues4RVnb9qD5A565iPP5cAyapocWTa9FYto1g&oe=661EA62D)![image-20240412131853406](index.assets/image-20240412131853406.png)
+    *   [SynthVSR: Scaling Up Visual Speech Recognition With Synthetic Supervision](https://scontent-sea1-1.xx.fbcdn.net/v/t39.2365-6/342351043_250090610744182_587763051308550377_n.pdf?_nc_cat=107&ccb=1-7&_nc_sid=3c67a6&_nc_ohc=SsXQzmf-F2oAb4fIR9b&_nc_ht=scontent-sea1-1.xx&oh=00_AfACtrfUcues4RVnb9qD5A565iPP5cAyapocWTa9FYto1g&oe=661EA62D)![image-20240412131853406](index.assets/image-20240412131853406.png)
 
 ### 多模态
 
@@ -117,32 +119,36 @@ draft: false
     *   [Transformer模型详解（图解最完整版） - 初识CV的文章 - 知乎](https://zhuanlan.zhihu.com/p/338817680)
     *   https://paperswithcode.com/method/transformer
 
-![img](index.assets/eac4b74543a982263a2cf99edf6977044890eb88.jpeg@f_auto "50%")
+    <img src="index.assets/eac4b74543a982263a2cf99edf6977044890eb88.jpeg@f_auto" alt="img" style="zoom:50%;" />
+
 *   [CLIP](https://github.com/mlfoundations/open_clip)-->MetaCLIP（ICLR2024 Spotlight）：https://arxiv.org/abs/2309.16671
 
 >   ...... We believe that the main ingredient **to the success of CLIP is its data and not the model architecture or pre-training objective** ......
 
 *   [ImageBind](https://imagebind.metademolab.com/)：https://arxiv.org/abs/2305.05665
 
-![《ImageBind: One Embedding Space To Bind Them All》阅读笔记](index.assets/v2-55a930bbc01188a344f19ac3fe3be455_1440w.image "50%")
+    *   图像充当了“媒介”的作用，所有的模态都可以通过与图像的**直接关联**建立与其他任意模态的**间接关联**关系。<img src="index.assets/v2-55a930bbc01188a344f19ac3fe3be455_1440w.image" alt="《ImageBind: One Embedding Space To Bind Them All》阅读笔记" style="zoom:50%;" />
+
     *   采用对比式的自监督学习方法，通过训练配对的（图像,其他5种模态之一) 数据对的对齐，以图像的嵌入空间为基准，让所有其他模态都向这个基准靠近，从而实现其余各个模态之间的对齐。
 
-*   [《ImageBind: One Embedding Space To Bind Them All》阅读笔记 - Meta的文章 - 知乎](https://zhuanlan.zhihu.com/p/629014310)
+    *   [《ImageBind: One Embedding Space To Bind Them All》阅读笔记 - Meta的文章 - 知乎](https://zhuanlan.zhihu.com/p/629014310)
 
-    ![image-20240412173838302](zhuanhuan-transformed.assets/image-20240412173838302.png)
+        ![image-20240412173838302](index.assets/image-20240412173838302.png)
 
 *   多模态数据融合：
 
     *   Multimodal Intelligence: Representation Learning, Information Fusion, and Applications，https://arxiv.org/pdf/1911.03977.pdf
 
-![image-20240412224258501](index.assets/image-20240412224258501.png "67%")
+    <img src="index.assets/image-20240412224258501.png" alt="image-20240412224258501" style="zoom: 67%;" />
+
 ## 模型 Model
 
 ### 模型认识
 
 *   表达能力
 
-![MLP经典](index.assets/MLP经典.png "50%")
+    <img src="index.assets/MLP经典.png" alt="MLP经典" style="zoom:50%;" />
+
     *   实际上，很难让MLP收敛到模拟各种任务，我们需要精心设计各种结构来更好地认识现实世界中的数据，比如图像用卷积、序列数据用RNN以及注意力机制等
 
 *   研究模型结构的层次
@@ -208,37 +214,46 @@ draft: false
 
     *   [每个程序员都应该知道的延迟数字](https://zh.d2l.ai/chapter_computational-performance/hardware.html#id3)
 
-![../_images/latencynumbers.png](index.assets/latencynumbers.png "67%")
+        <img src="index.assets/latencynumbers.png" alt="../_images/latencynumbers.png" style="zoom:67%;" />
+
     *   [数据并行是最方便的](https://zh.d2l.ai/chapter_computational-performance/multiple-gpus.html)
 
-![splitting](index.assets/splitting.svg "67%")
+    ​	<img src="index.assets/splitting.svg" alt="splitting" style="zoom: 67%;" />
 
-*   数据并行训练：梯度的聚合需要在单个GPU（GPU 0)上完成，然后再将更新后的参数广播给所有GPU
+    *   数据并行训练：梯度的聚合需要在单个GPU（GPU 0）上完成，然后再将更新后的参数广播给所有GPU
 
-![../_images/ps-distributed.svg](index.assets/ps-distributed.svg "67%")
-   *   多机训练
-       *   多机多GPU分布式并行训练
+        <img src="index.assets/ps-distributed.svg" alt="../_images/ps-distributed.svg" style="zoom:67%;" />
 
-![../_images/ps-multimachine.svg](index.assets/ps-multimachine.svg "50%")
+    *   多机训练
+
+        *   多机多GPU分布式并行训练
+
+        <img src="index.assets/ps-multimachine.svg" alt="../_images/ps-multimachine.svg" style="zoom:50%;" />
+
         *   单参数服务器vs多参数服务器
 
-![../_images/ps-multips.svg](index.assets/ps-multips.svg "50%")
+        <img src="index.assets/ps-multips.svg" alt="../_images/ps-multips.svg" style="zoom:50%;" />
+
 *   训练过程的监控和调试 Evaluation
 
 *   性能提升
 
     *   A Survey of Techniques for Maximizing LLM Performance https://youtu.be/ahnGLM-RC1Y
 
-![image-20240412100340265](index.assets/image-20240412100340265.png "67%")
-![image-20240412100232603](index.assets/image-20240412100232603.png "50%")
+        <img src="index.assets/image-20240412100340265.png" alt="image-20240412100340265" style="zoom: 67%;" />
 
-*    [LORA：大模型轻量级微调 - 绝密伏击的文章 - 知乎](https://zhuanlan.zhihu.com/p/623543497)
+        <img src="index.assets/image-20240412100232603.png" alt="image-20240412100232603" style="zoom: 50%;" />
+
+    *   [LORA：大模型轻量级微调 - 绝密伏击的文章 - 知乎](https://zhuanlan.zhihu.com/p/623543497)
+
     *   量化，[大模型高效微调-QLoRA原理介绍 - 老苏聊AI的文章 - 知乎](https://zhuanlan.zhihu.com/p/647378373)
+
     *   [模型蒸馏](https://arxiv.org/abs/1503.02531)，[LLM-从大模型蒸馏到小模型的性能提升之路  - 知乎](https://zhuanlan.zhihu.com/p/678794929)
 
-
 *   可视化和解释结果 Visualization
+
 *   如何在第三方平台（比如云计算）中进行计算而不泄漏敏感数据
+
 *   如何充分利用专用硬件（举例）
 
     *   Google，Jax，TPU集群 & pathways，[如何评价 Google 在 2022 年 3 月公开的 Pathways 架构设计？ - SIY.Z的回答 - 知乎](https://www.zhihu.com/question/524596983/answer/2420225275)
@@ -247,7 +262,8 @@ draft: false
 
     *   meta，内部数据中心，NVIDIA GPU集群
 
-![img](index.assets/91b69a209b0945bba6d33960494836b7.png "50%")
+        ​	<img src="index.assets/91b69a209b0945bba6d33960494836b7.png" alt="img" style="zoom: 50%;" />
+
 *   如何降低能耗
 
 *   例子：语音系统设计与实现：GPT-SOVITS
@@ -264,11 +280,13 @@ draft: false
 
     *   【耗时两个月自主研发的低成本AI音色克隆软件，免费送给大家！【GPT-SoVITS】】 https://www.bilibili.com/video/BV12g4y1m7Uw/
 
-![|600](index.assets/Pasted image 20240306200902.png "50%")
-![image-20240412224757932](index.assets/image-20240412224757932.png "33%")
+        <img src="index.assets/Pasted image 20240306200902.png" alt="|600" style="zoom:50%;" />
+
+        <img src="index.assets/image-20240412224757932.png" alt="image-20240412224757932" style="zoom: 33%;" />
+
         ![image-20240414111516910](index.assets/image-20240414111516910.png)
 
-![image-20240414101850685](zhuanhuan-transformed.assets/image-20240414101850685.png)
+        ![image-20240414101850685](index.assets/image-20240414101850685.png)
 
 
 
@@ -297,12 +315,14 @@ draft: false
     - [可解释性](https://openai.com/research/language-models-can-explain-neurons-in-language-models)：Language models can explain neurons in language models，自我解释
 
         *   https://github.com/openai/automated-interpretability
-    ![image-20240412172854095](index.assets/image-20240412172854095-17129141602692.png "80%")
+        *   <img src="index.assets/image-20240412172854095-17129141602692.png" alt="image-20240412172854095" style="zoom: 80%;" />
+
     - [Weak-to-strong generalization](https://openai.com/research/weak-to-strong-generalization)
 
         - https://arxiv.org/abs/2312.09390，https://github.com/openai/weak-to-strong
 
-![image-20240412172208855](index.assets/image-20240412172208855.png "67%")
+            <img src="index.assets/image-20240412172208855.png" alt="image-20240412172208855" style="zoom:67%;" />
+
 
 *   fairness
 
@@ -325,7 +345,8 @@ draft: false
 
 *   法律的认定是灰色的，还未跟进，比如精彩对话数据的归属权（用户？平台？管理办法），现实数据收集资质（自动驾驶地图测绘）
 
-![LLM-Human](index.assets/LLM-Human.png "33%")
+    <img src="index.assets/LLM-Human.png" alt="LLM-Human" style="zoom: 33%;" />
+
 ## AI and its Systems
 
 ### Software systems
