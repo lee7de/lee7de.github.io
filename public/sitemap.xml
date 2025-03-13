@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/deepseek%E7%A0%94%E8%AF%BB%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2025-02-18T14:49:39+08:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-02-18T14:49:39+08:00</lastmod>
+    <lastmod>2025-03-13T12:13:04+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-03-13T12:13:04+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/human/%E6%96%B0%E6%89%8B%E6%8A%A4%E8%82%A4%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2025-03-13T12:13:04+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/deepseek%E7%A0%94%E8%AF%BB%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2025-02-18T14:49:39+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/%E6%88%91%E7%9A%84%E5%B8%B8%E7%94%A8ai%E6%A8%A1%E5%9E%8B%E4%B8%8E%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/</loc>
